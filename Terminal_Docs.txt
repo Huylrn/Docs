@@ -137,6 +137,9 @@ l - link(shortcuts)
 4. "git commit" :Dùng sau add, nôm na là đóng gói lại.
    "git commit -m 'label'" :Commit có nhãn.
 5. "git log" :Show history commit.
+   "git log --reverse" :Hiển thị tương tự git log, nhưng thứ tự sắp xếp commit ngược lại.
+   "git log --oneline" : Mỗi commit chỉ hiển thị một dòng, bao gồm ID commit và dòng đầu tiên của messages (cách này có vẻ dễ nhìn nhất).
+   "git log -p" :Hiển thị chi tiết thông tin commit, bao gồm cả nội dung thay đổi (thêm/xóa dòng code nào), tuy nhiên nếu có nhiều sự thay đổi, cách này nhìn khá là dài và rườm rà.
 6. "git show + opstion '35397c3349157245405b09d9a44504b0f7b33be6'" :Show chi tiết thay đổi của 1 commit.
 7. "git diff" :Xem sự khác biệt của modified với file trước đó.
 8. "git restore 'filename' " :Quay lại trước khi thay đổi.
