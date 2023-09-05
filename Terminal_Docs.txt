@@ -128,6 +128,12 @@ l - link(shortcuts)
         :write
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           		  --GIT--
+==GITHUB==
+1. git remote add origin 'link repository' :Liên kết git với github.
+2. git push -u origin 'branch name' :push lần đầu.
+   note: passwork là token,
+         cách truy cập your token: Settings -> Developer settings -> Personal access tokens -> Generat new token.
+3. git push :Đẩy code lên github.
 ==/Users/huuynguyen/WorkSpace/Learn_Git/1-commit==
 
 1. "git init" :Bắt đầu project.
@@ -156,3 +162,4 @@ l - link(shortcuts)
     "git checkout 'branch-name '" :Di chuyển về nhánh 'branch-name'.
 13. "git merge 'branch-name' " :Kéo các commit từ nhánh 'branch-name' về branch đang ở.
 14. file .gitignore chứa các file muốn ẩn bằng cách ghi tên file vào file .gitignore.
+
