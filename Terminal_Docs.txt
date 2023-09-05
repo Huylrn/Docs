@@ -1,0 +1,155 @@
+ 				   ====Terminal Docs====
+note: nơi làm việc là vị trí directory đang đứng.
+0. "Tab*2" :Để show thư mục con.
+   "Tab" :Hoàn thành nhanh từ.
+
+1. "echo" :In.
+
+2. "cd" :Di chuyển nơi làm việc.
+	Ex: cd - (Di chuyển tới nơi khi bắt đầu di qua nhiều thư mục).
+	Ex: cd /(Về ban đầu).
+	Ex: cd ..(Chuyển về thư mục cha).
+	Ex: cd (Về thư mục khi mới mở Terminal).
+s
+3. "pwd"" :info nơi làm việc hiện tại.
+
+4. "ls" :Thông tin các folder hoặc files trong nơi làm việc
+	Ex: ls -a || ls -l || ls -la (Hiển thị files ẩn || chi tiết hơn về file || hiện cả -l và -a).
+	Ex: ls -R (Hiện thị tất cả file bên trong, tại nơi làm việc).
+	Ex: ls -(R,a,l,la) Folder(*) (Thông tin các folder hoặc files trong *).
+	    ls -R -la Folder (Có thể).
+
+5. "touch" :Tao file.
+
+6. "mv" :Di chuyển file.
+	Ex: mv test.txt ./testFolder/ (Chuyển file vào testFolder).
+	💡: mv testCopy.txt test.txt (Sẽ đổi tên đuợc file).
+
+7. "cp" :Copy file (1) sang file (2) và nếu file (2) chưa được tạo thì sẽ tạo một file(2) mới .
+	Ex: cp test.txt(1) testCopy.txt(2).
+
+8. "cat" :In tất cả thông tin trong file.
+   "cat test_h.txt > test_new.txt" :Ghi nội dung trong file test_h.txt vào test_new.txt, phương thức ghi là ghi đè (Sử dụng được cho tất cả các lệnh có đầu ra, vd: echo,.. ,Cú pháp: ... > ....).
+   "cat test_h.txt >> test_new.txt" :Ghi nội dung fule test_h.txt vào cuối file test_new.txt.
+   "cat file.txt | grep 'từ cần tìm'" : in ra tất cả dòng có từ cần tìm.
+   "head" :In thong tin đầu File.
+   "tail" :In thong tin cuối file.
+   "tail -n [số] file.txt" :In ra số dòng nhập trong [Số] từ cuối lên <-> head thì ngược lại.
+   "tail -f file.txt" :Theo dõi(dung chung với split Panel).
+
+9. "rm" :Xóa file.
+   "rm -r" :Xóa được Folder có thư mục con.
+   "rm -fr" :Xóa git.
+
+10. "mkdir" :Tạo Folder.
+    "mkdir -pv" :Tạo nhiều Folder con.
+
+11. "rmdir" :Xóa folder .
+
+12. "whoami" :hiển thị username, trong trường hợp bạn sử dụng nhiều tài khoản bạn sẽ cần quan tâm đến lệnh su.
+
+13. QUYỀN HẠN
+r,4 - read
+w,2 - write
+x,1 - Execute :Thực thi
+0 - no permission
+d - diretory
+l - link(shortcuts)
+'-'(Ở đầu dòng) - file(-rwxr-xr-w)
+ Ex:
+	"drwxr-xr-w"
+   Chú thích:d - thư mục
+	     rwx - đọc, viết, thực thi(quyền của user).
+	     r-x - đọc, '-' là không có quyền viết, thực thi(quyền của group).
+	     r-w - đọc, viết, '-' là không có quyền thực thi(quyền của other).
+
+--XÉT QUYỀN--
+	chmod u=rwx,g=rw,o=r fileName.txt("="; thay đổi tất cả, "-" :bỏ, "+" :thêm).
+	chmod 764 fileName.txt
+--Tips--
+1. ^a :về đầu dòng
+   ^e :về cuối dòng
+   ^w :xóa 1 từ
+   ^u :xóa 1 line
+   ^y :add lại từ xóa bằng ^w
+   ^l :clear
+
+-------------------------------------------------------------------------------------------------------
+#Vim ("vi" or "vim" :Để mở vim)
+% Vi(Vim) demo.html ->(Mở vim với file demo.html(*) ,nếu chưa có file (*) thì tạo file (*) mới).
+0. ":q" :Thoát.
+   ":q!" :Thoát không lưu.
+   ":w" :Lưu(Có thể lưu vào file moi -- :w file.txt).
+   ":#1,#2 w Flie.txt" : Lưa từ #1 -> #2 (Như dưới).
+   ":r" :Chèn nội dung file vào tại vị trí con trỏ.
+   ":wq" :Lưu và thoát(":x" :Tương tự).
+1. "i(a)" :Vào mode -- INSERT -- tại vị trí con tro.
+   "A" :Vào mode -- INSERT -- tại vị trí cuối dòng.
+   "o" :Vào mode -- INSERT -- và cách phía dưới 1 dòng tại con trỏ chuột.
+   "O" :Vào mode -- INSERT -- và cách phía trên 1 dòng tại con trỏ chuột.
+   "w" :Di chuyển về đằng sau tới đầu mỗi từ.
+   "e" :Di chuyển về đằng sau tới cuối mỗi từ.
+   "$" :Di chuyển về cuối dòng.
+   "u" :Quay lại thao tác trước đó.
+   "U" :Để hủy bỏ tất cả các thao tác trên một dòng.
+   "p" :Để dán những gì vừa xóa tới sau con trỏ.
+   "r" :Thay thế tại vị trí con trỏ.
+   "R" :Thay thế nhiều chữ hiện tại.
+   "c(d) [số]" :số tổng số ô bên trong[] (Dùng c thì vào trong chế độ -- INSERT --, d thì không).
+   "cw" :Để thay đổi một phần hay cả một từ.
+   "dw" :Xóa hết từ.
+   "dd" :Để xóa cả một dòng gõ.
+   "d$" :Để xóa từ con trỏ tới cuối dòng.
+   "g [Delete]" :Select nhiều ô.
+   "Ctrl g" :Hiển thị thông tin dòng tại con trỏ.
+   "[số] Shift g" :Di chuyển tới dòng [], nếu không có số thì di chuyển về cuối.
+   "/(?) và theo sau là cụm từ muốn tìm kiếm" :"/" là tìm kiếm về cuối, "?" là tìm kiếm về đầu (n hoặc Shift-n đễ di chuyển giữa các kết quả và nó dùng cho mọi loại tìm kiếm) .
+   "#" :Tìm kiếm chữ tại con trỏ chuột.
+   "%" :để tìm kiếm ),], hay } (Để con trỏ tại đầu hoặc cuối dấu '[],{},()' thì di chuyển đến phía còn dấu lại hoặc nó sẽ tìm cặp '{}.[],()' gần nhất tính từ vị trí con trỏ).
+   ":set ic" :Thêm chữ ghi hoa trong kết quả tìm kiếm.
+   ":set hls is" :highlight kết quả tìm kiếm.
+   ":nohlsearch" :Ẩn các highlight đang hiện,
+   ":s/'cũ'/'mới'/" :Thay thế từ 'cũ' thành từ 'mới' trên dòng tại vị trí con trỏ và từ tìm được đầu tiên trên dòng (Nếu :s/''/''/g thì sẽ thây đổi tất cả từ được tìm tại dòng có con trỏ chuột).
+   ":%s/'cũ'/'mới'/g" :Thay thế thế toàn bộ trong file.
+   ":#1,#2s/'cũ'/'mới'/g" :(Trong đó #1,#2 là số thứ tự của hai dòng) Thay đổi từ dòng #1 tới dòng
+#2.
+   ":!" :Sau đó sẽ nhập được lệnh shell.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  1. Soạn thảo tệp tin "vimrc", phụ thuộc vào hệ thống của bạn:
+        :edit ~/.vimrc          đối với Unix
+        :edit ~/_vimrc          đối với MS-Windows
+
+  2. Bây giờ đọc tập tin "vimrc" ví dụ:
+
+        :read $VIMRUNTIME/vimrc_example.vim
+
+  3. Ghi lại tập tin:
+
+        :write
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+          		  --GIT--
+==/Users/huuynguyen/WorkSpace/Learn_Git/1-commit==
+
+1. "git init" :Bắt đầu project.
+2. "git status" :Trạng thái của git.
+3. "git add" :Add file new vào git.
+   "git add ." :Add tất cả.
+4. "git commit" :Dùng sau add, nôm na là đóng gói lại.
+   "git commit -m 'label'" :Commit có nhãn.
+5. "git log" :Show history commit.
+6. "git show + opstion '35397c3349157245405b09d9a44504b0f7b33be6'" :Show chi tiết thay đổi của 1 commit.
+7. "git diff" :Xem sự khác biệt của modified với file trước đó.
+8. "git restore 'filename' " :Quay lại trước khi thay đổi.
+   "git checkout -- 'filename' " :Tương tự.
+9. "git reset HEAD 'filename' " :Undo về trước khi git add.
+   "git restore --staged 'filename' " :Tương tự.
+   "git reset -- mixed 'ID-commit' " :Gỡ commit trước 'ID-commit' và Undo về trước khi git add.
+   "git reset --soft 'ID-commit' " :Gỡ commit trước 'ID-commit'.
+   "git reset --hard 'ID-cmmit' " :Xóa commit trước 'ID-commit'.
+10. "git revert 'ID-commit' " :Xóa những thay đổi tại 'ID-commit'.
+11. "git branch" :list các nhánh (* là nhánh đang ở).
+    "git branch -D 'branch-name' " :Xóa nhánh 'branch-name'.
+12. "git checkout -b 'branch-name' " :Tạo 1 nhánh mới.
+    "git checkout 'branch-name '" :Di chuyển về nhánh 'branch-name'.
+13. "git merge 'branch-name' " :Kéo các commit từ nhánh 'branch-name' về branch đang ở.
+14. file .gitignore chứa các file muốn ẩn bằng cách ghi tên file vào file .gitignore.
