@@ -27,6 +27,7 @@ s
 
 7. "cp" :Copy file (1) sang file (2) và nếu file (2) chưa được tạo thì sẽ tạo một file(2) mới .
 	Ex: cp test.txt(1) testCopy.txt(2).
+   "cp -r" :Di chuyển directory.
 
 8. "cat" :In tất cả thông tin trong file.
    "cat test_h.txt > test_new.txt" :Ghi nội dung trong file test_h.txt vào test_new.txt, phương thức ghi là ghi đè (Sử dụng được cho tất cả các lệnh có đầu ra, vd: echo,.. ,Cú pháp: ... > ....).
@@ -130,6 +131,8 @@ l - link(shortcuts)
           		  --GIT--
 ==GITHUB==
 1. git remote add origin 'link repository' :Liên kết git với github.
+   git remote add origin new-url 'link repository' :Liên kết thêm với repository khác.
+   git remote rm origin :Xóa all liên kết.
 2. git push -u origin 'branch name' :push lần đầu.
    note: passwork là token,
          cách truy cập your token: Settings -> Developer settings -> Personal access tokens -> Generat new token.
