@@ -9,7 +9,7 @@ note: nơi làm việc là vị trí directory đang đứng.
 	Ex: cd - (Di chuyển tới nơi khi bắt đầu di qua nhiều thư mục).
 	Ex: cd /(Về ban đầu).
 	Ex: cd ..(Chuyển về thư mục cha).
-	Ex: cd (Về thư mục khi mới mở Terminal).
+	Ex: cd hay cd ~(Về thư mục home, nói có tk user thì là tên user).
 s
 3. "pwd"" :info nơi làm việc hiện tại.
 
@@ -31,12 +31,12 @@ s
 
 8. "cat" :In tất cả thông tin trong file.
    "cat test_h.txt > test_new.txt" :Ghi nội dung trong file test_h.txt vào test_new.txt, phương thức ghi là ghi đè (Sử dụng được cho tất cả các lệnh có đầu ra, vd: echo,.. ,Cú pháp: ... > ....).
-   "cat test_h.txt >> test_new.txt" :Ghi nội dung fule test_h.txt vào cuối file test_new.txt.
+   "cat test_h.txt >> test_new.txt" :Ghi nội dung file test_h.txt vào cuối file test_new.txt.
    "cat file.txt | grep 'từ cần tìm'" : in ra tất cả dòng có từ cần tìm.
-   "head" :In thong tin đầu File.
-   "tail" :In thong tin cuối file.
+   "head" :In thông tin đầu File.
+   "tail" :In thông tin cuối file.
    "tail -n [số] file.txt" :In ra số dòng nhập trong [Số] từ cuối lên <-> head thì ngược lại.
-   "tail -f file.txt" :Theo dõi(dung chung với split Panel).
+   "tail -f file.txt" :Theo dõi(dùng chung với split Panel).
 
 9. "rm" :Xóa file.
    "rm -r" :Xóa được Folder có thư mục con.
@@ -73,18 +73,21 @@ l - link(shortcuts)
    ^w :xóa 1 từ
    ^u :xóa 1 line
    ^y :add lại từ xóa bằng ^w
-   ^l :clear
+   ^l :clear screnn
+   comand + k :clear tab giữ lại nội dung tại dòng có con trỏ.
+   comand + l :clear tab.
 
 -------------------------------------------------------------------------------------------------------
 #Vim ("vi" or "vim" :Để mở vim)
 % Vi(Vim) demo.html ->(Mở vim với file demo.html(*) ,nếu chưa có file (*) thì tạo file (*) mới).
 0. ":q" :Thoát.
    ":q!" :Thoát không lưu.
-   ":w" :Lưu(Có thể lưu vào file moi -- :w file.txt).
+   ":w" :Lưu(Có thể lưu vào file mới, vd: ':w file.txt').
    ":#1,#2 w Flie.txt" : Lưa từ #1 -> #2 (Như dưới).
    ":r" :Chèn nội dung file vào tại vị trí con trỏ.
    ":wq" :Lưu và thoát(":x" :Tương tự).
-1. "i(a)" :Vào mode -- INSERT -- tại vị trí con tro.
+1. "i(a)" :Vào mode -- INSERT -- tại vị trí con trỏ.
+   "I" :Vào mode -- INSERT -- tại vị trí đầu dòng.
    "A" :Vào mode -- INSERT -- tại vị trí cuối dòng.
    "o" :Vào mode -- INSERT -- và cách phía dưới 1 dòng tại con trỏ chuột.
    "O" :Vào mode -- INSERT -- và cách phía trên 1 dòng tại con trỏ chuột.
@@ -96,10 +99,10 @@ l - link(shortcuts)
    "p" :Để dán những gì vừa xóa tới sau con trỏ.
    "r" :Thay thế tại vị trí con trỏ.
    "R" :Thay thế nhiều chữ hiện tại.
-   "c(d) [số]" :số tổng số ô bên trong[] (Dùng c thì vào trong chế độ -- INSERT --, d thì không).
+   "c(d) [số]" :xóa tổng số ô bên trong[] (Dùng c thì vào trong chế độ -- INSERT --, d thì không).
    "cw" :Để thay đổi một phần hay cả một từ.
    "dw" :Xóa hết từ.
-   "dd" :Để xóa cả một dòng gõ.
+   "dd" :Để xóa cả một dòng.
    "d$" :Để xóa từ con trỏ tới cuối dòng.
    "g [Delete]" :Select nhiều ô.
    "Ctrl g" :Hiển thị thông tin dòng tại con trỏ.
