@@ -83,47 +83,6 @@ l - link(shortcuts)
    comand + l :clear tab.
 
 -------------------------------------------------------------------------------------------------------
-#Vim ("vi" or "vim" :Để mở vim)
-% Vi(Vim) demo.html ->(Mở vim với file demo.html(*) ,nếu chưa có file (*) thì tạo file (*) mới).
-0. ":q" :Thoát.
-   ":q!" :Thoát không lưu.
-   ":w" :Lưu(Có thể lưu vào file mới, vd: ':w file.txt').
-   ":#1,#2 w Flie.txt" : Lưa từ #1 -> #2 (Như dưới).
-   ":r" :Chèn nội dung file vào tại vị trí con trỏ.
-   ":wq" :Lưu và thoát(":x" :Tương tự).
-
-1. "i(a)" :Vào mode -- INSERT -- tại vị trí con trỏ.
-   "I" :Vào mode -- INSERT -- tại vị trí đầu dòng.
-   "A" :Vào mode -- INSERT -- tại vị trí cuối dòng.
-   "o" :Vào mode -- INSERT -- và cách phía dưới 1 dòng tại con trỏ chuột.
-   "O" :Vào mode -- INSERT -- và cách phía trên 1 dòng tại con trỏ chuột.
-   "w" :Di chuyển về đằng sau tới đầu mỗi từ.
-   "e" :Di chuyển về đằng sau tới cuối mỗi từ.
-   "$" :Di chuyển về cuối dòng.
-   "u" :Quay lại thao tác trước đó.
-   "U" :Để hủy bỏ tất cả các thao tác trên một dòng.
-   "p" :Để dán những gì vừa xóa tới sau con trỏ.
-   "r" :Thay thế tại vị trí con trỏ.
-   "R" :Thay thế nhiều chữ hiện tại.
-   "c(d) [số]" :xóa tổng số ô bên trong[] (Dùng c thì vào trong chế độ -- INSERT --, d thì không).
-   "cw" :Để thay đổi một phần hay cả một từ.
-   "dw" :Xóa hết từ.
-   "dd" :Để xóa cả một dòng.
-   "d$" :Để xóa từ con trỏ tới cuối dòng.
-   "g [Delete]" :Select nhiều ô.
-   "Ctrl g" :Hiển thị thông tin dòng tại con trỏ.
-   "[số] Shift g" :Di chuyển tới dòng [], nếu không có số thì di chuyển về cuối.
-   "/(?) và theo sau là cụm từ muốn tìm kiếm" :"/" là tìm kiếm về cuối, "?" là tìm kiếm về đầu (n hoặc Shift-n đễ di chuyển giữa các kết quả và nó dùng cho mọi loại tìm kiếm) .
-   "#" :Tìm kiếm chữ tại con trỏ chuột.
-   "%" :để tìm kiếm ),], hay } (Để con trỏ tại đầu hoặc cuối dấu '[],{},()' thì di chuyển đến phía còn dấu lại hoặc nó sẽ tìm cặp '{}.[],()' gần nhất tính từ vị trí con trỏ).
-   ":set ic" :Thêm chữ ghi hoa trong kết quả tìm kiếm.
-   ":set hls is" :highlight kết quả tìm kiếm.
-   ":nohlsearch" :Ẩn các highlight đang hiện,
-   ":s/'cũ'/'mới'/" :Thay thế từ 'cũ' thành từ 'mới' trên dòng tại vị trí con trỏ và từ tìm được đầu tiên trên dòng (Nếu :s/''/''/g thì sẽ thây đổi tất cả từ được tìm tại dòng có con trỏ chuột).
-   ":%s/'cũ'/'mới'/g" :Thay thế thế toàn bộ trong file.
-   ":#1,#2s/'cũ'/'mới'/g" :(Trong đó #1,#2 là số thứ tự của hai dòng) Thay đổi từ dòng #1 tới dòng
-#2.
-   ":!" :Sau đó sẽ nhập được lệnh shell.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   1. Soạn thảo tệp tin "vimrc", phụ thuộc vào hệ thống của bạn:
         :edit ~/.vimrc          đối với Unix
