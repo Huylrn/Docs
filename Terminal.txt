@@ -9,15 +9,16 @@ note: nơi làm việc là vị trí directory đang đứng.
 	Ex: cd - (Di chuyển tới nơi khi bắt đầu di qua nhiều thư mục).
 	Ex: cd /(Về ban đầu).
 	Ex: cd ..(Chuyển về thư mục cha).
-	Ex: cd hay cd ~ (Về thư mục home, nếu có tk user thì là tên user).
+	Ex: cd hay cd (Về thư mục home, nếu có tk user thì là tên user).
 s
 3. "pwd"" :info nơi làm việc hiện tại.
 
 4. "ls" :Thông tin các folder hoặc files trong nơi làm việc
-	Ex: ls -a || ls -l || ls -la (Hiển thị files ẩn || chi tiết hơn về file || hiện cả -l và -a).
-	Ex: ls -R (Hiện thị tất cả file bên trong, tại nơi làm việc).
-	Ex: ls -(R,a,l,la) Folder(*) (Thông tin các folder hoặc files trong *).
-	    ls -R -la Folder (Có thể).
+    ls -a || ls -l || ls -la (Hiển thị files ẩn || chi tiết hơn về file || hiện cả -l và -a).
+    ls -R (Hiện thị tất cả file bên trong, tại nơi làm việc).
+    ls -d (Thông tin các directory.)
+    ls -(R,a,l,la) Folder(*) (Thông tin các folder hoặc files trong *).
+    ls -R -la Folder (Có thể).
 
 5. "touch" :Tao file.
 
@@ -46,6 +47,7 @@ s
 9. "rm" :Xóa file.
    "rm -r" :Xóa được Folder có thư mục con.
    "rm -fr" :Xóa git.
+   "rm *.'txt,js hay cpp, ...' " :Xóa tất cả các file có đuôi 'txt,js hay cpp, ...' .
 
 10. "mkdir" :Tạo Folder.
     "mkdir -pv" :Tạo nhiều Folder con.

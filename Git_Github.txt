@@ -1,4 +1,4 @@
-                        =====~GIT~=====
+                        ===~GIT~=====
 ==GITHUB==
 # "rm -fr .git" :Xóa git khỏi diretory.
 1. git remote add origin 'link repository' :Liên kết git với github.

@@ -16,7 +16,9 @@
    "O" :Vào mode -- INSERT -- và cách phía trên 1 dòng tại con trỏ chuột.
    "w" :Di chuyển về đằng sau tới đầu mỗi từ.
    "e" :Di chuyển về đằng sau tới cuối mỗi từ.
+   "b" :Di chuyển về đằng trước tới đầu mỗi từ.
    "$" :Di chuyển về cuối dòng.
+   "0" :Di chuyển về đầu dòng.
    "u" :Quay lại thao tác trước đó.
    "U" :Để hủy bỏ tất cả các thao tác trên một dòng.
    "p" :Để dán những gì vừa xóa tới sau con trỏ.
@@ -33,11 +35,26 @@
    "/(?) và theo sau là cụm từ muốn tìm kiếm" :"/" là tìm kiếm về cuối, "?" là tìm kiếm về đầu (n hoặc Shift-n đễ di chuyển giữa các kết quả và nó dùng cho mọi loại tìm kiếm) .
    "#" :Tìm kiếm chữ tại con trỏ chuột.
    "%" :để tìm kiếm ),], hay } (Để con trỏ tại đầu hoặc cuối dấu '[],{},()' thì di chuyển đến phía còn dấu lại hoặc nó sẽ tìm cặp '{}.[],()' gần nhất tính từ vị trí con trỏ).
-   ":set ic" :Thêm chữ ghi hoa trong kết quả tìm kiếm.
+   ":set ic" :Thêm chữ ghi hoa trong kết quả tìm kim.
    ":set hls is" :highlight kết quả tìm kiếm.
    ":nohlsearch" :Ẩn các highlight đang hiện,
-   ":s/'cũ'/'mới'/" :Thay thế từ 'cũ' thành từ 'mới' trên dòng tại vị trí con trỏ và từ tìm được đầu tiên trên dòng (Nếu :s/''/''/g thì sẽ thây đổi tất cả từ được tìm tại dòng có con trỏ chuột).
-   ":%s/'cũ'/'mới'/g" :Thay thế thế toàn bộ trong file.
-   ":#1,#2s/'cũ'/'mới'/g" :(Trong đó #1,#2 là số thứ tự của hai dòng) Thay đổi từ dòng #1 tới dòng
+   ":s/cũ/mới/" :Thay thế từ cũ thành từ mới trên dòng tại vị trí con trỏ và từ tìm được đầu tiên trên dòng (Nếu :s/ / /g thì sẽ thay đổi tất cả từ được tìm tại dòng có con trỏ chuột).
+      note: opstion 'g' Để thay thế tất cả.
+   ":%s/cũ/mới/g" :Thay thế thế toàn bộ trong file.
+   ":#1,#2s/cũ/mới/g" :(Trong đó #1,#2 là số thứ tự của hai dòng) Thay đổi từ dòng #1 tới dòng
 #2.
    ":!" :Sau đó sẽ nhập được lệnh shell.
+
+2. Làm việc với nhiều file.
+   "ls" :Xem các file đã mở.
+     note: '...' là vị trí file, xem trong ':ls'.
+   ":e fileName.txt" :Mở thêm fileName.
+   ":bd" :Đóng file đang hiển thị.
+   ":bd flieName.txt" :Đóng fileName.
+   ":bd '...' " :Đóng file có vị trí '...'.
+   ":bn" :Di chuyển tới file tiếp theo.
+   ":bp" :Quay lại file trước đó.
+   ":b fileName.txt" :Di chuyển tới fileName.
+   ":b'...'' " :Di chuyển tới file có vị trí '...'.
+   ":vs fileName.txt" :Chia đôi màn hình bên phải file đang hiển thị và mở fileName.
+   ":sp fileName.txt" :Chia đôi màn hình bên dưới file đang hiển thị và mở fileName.
