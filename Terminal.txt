@@ -2,6 +2,7 @@
 note: nơi làm việc là vị trí directory đang đứng.
 0. "Tab*2" :Để show thư mục con.
    "Tab" :Hoàn thành nhanh từ.
+   "man 'command' " :help.
 
 1. "echo" :In.
 
@@ -33,7 +34,7 @@ note: nơi làm việc là vị trí directory đang đứng.
 8. "cat" :In tất cả thông tin trong file.
    "cat test_h.txt > test_new.txt" :Ghi nội dung trong file test_h.txt vào test_new.txt, phương thức ghi là ghi đè (Sử dụng được cho tất cả các lệnh có đầu ra, vd: echo,.. ,Cú pháp: ... > ....).
    "cat test_h.txt >> test_new.txt" :Ghi nội dung file test_h.txt vào cuối file test_new.txt.
-   "cat file.txt | grep 'từ cần tìm'" : in ra tất cả dòng có từ cần tìm.
+   "cat file.txt | grep 'từ cần tìm' " : in ra tất cả dòng có từ cần tìm.
    "cat -n" :opstion.
    "cat -n 'fileName' | sed -n 'lineA,lineBp'" :In từ lineA -> lineB.
       vd:cat -n file.txt | sed -n '1,10p' .
@@ -74,6 +75,9 @@ l - link(shortcuts)
 --XÉT QUYỀN--
 	chmod u=rwx,g=rw,o=r fileName.txt("="; thay đổi tất cả, "-" :bỏ, "+" :thêm).
 	chmod 764 fileName.txt
+
+14. "web_search 'bing,google,..' 'Từ khóa' " :Tìm kiếm trên internet.
+
 --Tips--
 1. ^a :về đầu dòng
    ^e :về cuối dòng
@@ -83,3 +87,5 @@ l - link(shortcuts)
    ^l :clear screnn
    comand + k :clear tab giữ lại nội dung tại dòng có con trỏ.
    comand + l :clear tab.
+===Alias===
+#. "alias" :shortcuts của các lệnh.
