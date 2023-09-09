@@ -39,7 +39,7 @@ note: nơi làm việc là vị trí directory đang đứng.
    "cat -n 'fileName' | sed -n 'lineA,lineBp'" :In từ lineA -> lineB.
       vd:cat -n file.txt | sed -n '1,10p' .
    "sed -n 'lineA,lineBp' file name" :Như cat , in từ lineA -> lineB.
-      vd:sed -n '1,10p' file.txt .
+      vd:sed -n '1,10p' file.txt.
    "head" :In thông tin đầu File.
    "tail" :In thông tin cuối file.
    "tail -n [số] file.txt" :In ra số dòng nhập trong [Số] từ cuối lên <-> head thì ngược lại.
