@@ -10,7 +10,7 @@ note: nơi làm việc là vị trí directory đang đứng.
 	Ex: cd /(Về ban đầu).
 	Ex: cd ..(Chuyển về thư mục cha).
 	Ex: cd hay cd (Về thư mục home, nếu có tk user thì là tên user).
-s
+
 3. "pwd"" :info nơi làm việc hiện tại.
 
 4. "ls" :Thông tin các folder hoặc files trong nơi làm việc
