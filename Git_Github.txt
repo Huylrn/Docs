@@ -9,9 +9,11 @@
    note: passwork là token,
          cách truy cập your token: Settings -> Developer settings -> Personal access tokens -> Generat new token.
 
-3. "git push" :Đẩy code lên github.
+3. "git push" :Đẩy code lên github, dùng khi có 1 nhánh.
+   "git push origin 'branch_Name' " :Dùng khi có nhiều nhánh.
 
-4. "git pull" :Kéo new commit từ github về.
+4. "git pull" :Kéo new commit từ github về, dùng khi có 1 nhánh.
+   "git pull origin 'branch_Name' " :Dùng khi có nhiều nhánh.
 
 5. "git clone 'link repository' " :Sao chép repository từ github về.
 
@@ -58,3 +60,12 @@
 13. "git merge 'branch-name' " :Kéo các commit từ nhánh 'branch-name' về branch đang ở.
 
 14. file .gitignore chứa các file muốn ẩn bằng cách ghi tên file vào file .gitignore.
+
+15. Xử lí Conflicting file(2 người cùng sửa 1 file trên 2 nhánh khác nhau).
+  step 1 :git pull.
+  step 2 :Di chuyển tới nhánh cần xử lí(git checkout 'branch_Name' ).
+  step 3 :Kéo nhánh master(main) về nhánh cần xử lí(git merge master(main) ).
+  step 4 :Sửa file hiển thị lỗi sau khi merge(file 2 người cùng sửa).
+  step 5 :Add,commit file rồi push branch lên github.
+  step 6 :Đã merge pull request bình thường, lỗi Conflicting file đã được fix.
+
