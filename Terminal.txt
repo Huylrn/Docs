@@ -78,6 +78,17 @@ l - link(shortcuts)
 
 14. "web_search 'bing,google,..' 'Từ khóa' " :Tìm kiếm trên internet.
 
+15. Nén và giải nén (tar)
+    "tar -[opstion] <Compress-Name (.zip, .tar,... )> <Files need compress>".
+    note-[opstion]:
+          > -c :Tạo file mới(Phải có khi cần nén file).
+          > -v :Hiển thị kết quả sau khi chạy lên terminal.
+          > -f :(Phải có).
+          > -z :Dùng gzip để nén file (https://askanydifference.com/vi/difference-between-zip-and-gzip/).
+               :Dùng 'z' để nén or giải nén <file.zip.gz>,<file.tar.gz>, ...
+          > -x :(Phải có khi giải nén).
+    vd: "tar -cvf file.zip file1.txt file2.txt"
+        "tar -xvf file.zip"
 --Tips--
 1. ^a :về đầu dòng
    ^e :về cuối dòng
