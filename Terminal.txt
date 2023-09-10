@@ -81,14 +81,16 @@ l - link(shortcuts)
 15. Nén và giải nén (tar)
     "tar -[opstion] <Compress-Name (.zip, .tar,... )> <Files need compress>".
     note-[opstion]:
-          > -c :Tạo file mới(Phải có khi cần nén file).
-          > -v :Hiển thị kết quả sau khi chạy lên terminal.
-          > -f :(Phải có).
+          > -c :Tạo file mới(Phải có khi nén file).
+          > -v :Hiển thị quá trình nén or giải nén.
+          > -f :Là tùy chọn để chỉ định tên của tệp tin cần giải nén (Phải có).
           > -z :Dùng gzip để nén file (https://askanydifference.com/vi/difference-between-zip-and-gzip/).
                :Dùng 'z' để nén or giải nén <file.zip.gz>,<file.tar.gz>, ...
           > -x :(Phải có khi giải nén).
+    note:
+          "tar -xvf file.zip -C ~/WorkSpace" :Thêm '-C' để giải nén tới thư mục khác.
     vd: "tar -cvf file.zip file1.txt file2.txt"
-        "tar -xvf file.zip"
+        "tar -xvf file.zip" :Giải nén tại thư mục chứa 'file.zip' .
 --Tips--
 1. ^a :về đầu dòng
    ^e :về cuối dòng
@@ -100,3 +102,47 @@ l - link(shortcuts)
    comand + l :clear tab.
 ===Alias===
 #. "alias" :shortcuts của các lệnh.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
