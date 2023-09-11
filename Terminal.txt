@@ -25,11 +25,12 @@ note: nơi làm việc là vị trí directory đang đứng.
 
 6. "mv" :Di chuyển file.
 	Ex: mv test.txt ./testFolder/ (Chuyển file vào testFolder).
-	💡: mv testCopy.txt test.txt (Sẽ đổi tên đuợc file).
+	💡: mv testCopy.txt test.txt (Sẽ đổi được tên file).
 
 7. "cp" :Copy file (1) sang file (2) và nếu file (2) chưa được tạo thì sẽ tạo một file(2) mới .
 	Ex: cp test.txt(1) testCopy.txt(2).
-   "cp -r" :copy directory.
+   ||note-[opstion]:
+       > -r :Dùng để copy directory.||
 
 8. "cat" :In tất cả thông tin trong file.
    "cat test_h.txt > test_new.txt" :Ghi nội dung trong file test_h.txt vào test_new.txt, phương thức ghi là ghi đè (Sử dụng được cho tất cả các lệnh có đầu ra, vd: echo,.. ,Cú pháp: ... > ....).
@@ -46,12 +47,17 @@ note: nơi làm việc là vị trí directory đang đứng.
    "tail -f file.txt" :Theo dõi(dùng chung với split Panel).
 
 9. "rm" :Xóa file.
-   "rm -r" :Xóa được Folder có thư mục con.
+   ||note-[opstion]:
+        > -r :Xóa các thư mục có thư mục con or file bên trong.||
+
    "rm -fr" :Xóa git.
-   "rm *.'txt,js hay cpp, ...' " :Xóa tất cả các file có đuôi 'txt,js hay cpp, ...' .
+   "rm *.<txt,js hay cpp, ...> " :Xóa tất cả các file có đuôi 'txt,js hay cpp, ...' .
 
 10. "mkdir" :Tạo Folder.
     "mkdir -pv" :Tạo nhiều Folder con.
+    ||note-[opstion]:
+        > -v :Hiển thị các directory đã tạo ra màn hình (message).
+        > -p(parent) :Cùng tạo nhiều directory cùng lúc.||
 
 11. "rmdir" :Xóa folder .
 
@@ -80,23 +86,24 @@ l - link(shortcuts)
 
 15. Nén và giải nén (tar)
     "tar -[opstion] <Compress-Name (.zip, .tar,... )> <Files need compress>".
-    note-[opstion]:
+    ||note-[opstion]:
           > -c :Tạo file mới(Phải có khi nén file).
           > -v :Hiển thị quá trình nén or giải nén.
           > -f :Là tùy chọn để chỉ định tên của tệp tin cần giải nén (Phải có).
           > -z :Dùng gzip để nén file (https://askanydifference.com/vi/difference-between-zip-and-gzip/).
                :Dùng 'z' để nén or giải nén <file.zip.gz>,<file.tar.gz>, ...
-          > -x :(Phải có khi giải nén).
-    note:
-          "tar -xvf file.zip -C ~/WorkSpace" :Thêm '-C' để giải nén tới thư mục khác.
+          > -x :(Phải có khi giải nén).||
+    "tar -xvf file.zip -C ~/WorkSpace" :Thêm '-C' để giải nén tới thư mục khác.
     vd: "tar -cvf file.zip file1.txt file2.txt"
         "tar -xvf file.zip" :Giải nén tại thư mục chứa 'file.zip' .
 
 --Tips--
+note: '^': Control.
 1. ^a :về đầu dòng
    ^e :về cuối dòng
    ^w :xóa 1 từ
    ^u :xóa 1 line
+   ^r :Tìm kiếm command đã từng thực hiện.
    ^y :add lại từ xóa bằng ^w
    ^l :clear screnn
    comand + k :clear tab giữ lại nội dung tại dòng có con trỏ.
