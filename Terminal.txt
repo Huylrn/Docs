@@ -106,7 +106,7 @@ note: '^': Control.
    ^r :Tìm kiếm command đã từng thực hiện.
    ^y :add lại từ xóa bằng ^w
    ^l :clear screnn
-   comand + k :clear tab giữ lại nội dung tại dòng có con trỏ.
+   comand + k :clear tab.
    comand + l :clear tab.
 ===Alias===
 #. "alias" :shortcuts của các lệnh.
