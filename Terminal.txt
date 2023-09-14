@@ -97,6 +97,8 @@ l - link(shortcuts)
     vd: "tar -cvf file.zip file1.txt file2.txt"
         "tar -xvf file.zip" :Giải nén tại thư mục chứa 'file.zip' .
 
+
+
 --Tips--
 note: '^': Control.
 1. ^a :về đầu dòng
