@@ -69,3 +69,6 @@
   step 5 :Add,commit file rồi push branch lên github.
   step 6 :Đã merge pull request bình thường, lỗi Conflicting file đã được fix.
 
+16.
+   ❯ git config --global credential.helper "cache --timeout=90000"
+
