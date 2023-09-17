@@ -18,7 +18,7 @@
 8. [Horizontal rules](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#8-horizontal-rules-%C4%91%C6%B0%E1%BB%9Dng-k%E1%BA%BB-n%E1%BA%B1m-ngang)
 9. [Link](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#9-link)
 10. [Images](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#10-imagessource)
-11. [Table]()
+11. [Table](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#11-table)
 12. [ \ ](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#11-d%C3%B9ng----%C4%91%E1%BB%83-lo%E1%BA%A1i-b%E1%BB%8F-c%C3%A1c-l%E1%BB%87nh)
 
 ***
@@ -175,16 +175,16 @@ The Rendered outout looks like this:
 
        ```html
        <!DOCTYPE html>
-               <html lang="en">
-               <head>
-                  <meta charset="UTF-8">
-                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                  <title>Document</title>
-               </head>
-               <body>
+        <html lang="en">
+        <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+        </head>
+        <body>
     
-               </body>
-               </html>
+        </body>
+        </html>
        ```
 
 ```html
@@ -217,9 +217,23 @@ The Rendered outout looks like this:
 
 😄`Command + V` from image.
 
+`<img width="230" alt="image" src="https://github.com/Huylrn/Docs/assets/141661219/bee8aef2-1022-4630-9483-f7be7890b032">`
+
+
 <img width="230" alt="image" src="https://github.com/Huylrn/Docs/assets/141661219/bee8aef2-1022-4630-9483-f7be7890b032">
 
 ## 11. Table
+
+    |A\B|B1|B2|B3|
+    |-|-|-|-|
+    |A1 |1|2|3|
+    |A2 |5|6|2|
+    |A3 |6|9|0|
+|A\B|B1|B2|B3|
+|-|-|-|-|
+|A1 |1|2|3|
+|A2 |5|6|2|
+|A3 |6|9|0|
 
 ## 12. Dùng < \ > để loại bỏ các lệnh
         \* Helle,World\!
