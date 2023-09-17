@@ -215,5 +215,8 @@ The Rendered outout looks like this:
 ## 10. Images[#Source](https://www.markdownguide.org/basic-syntax/#images-1)
 
 ## 11. Dùng < \ > để loại bỏ các lệnh
-        \ * Helle,World!
-\ * Hello,World!
+        \* Helle,World\!
+        \`Hehehe\`
+\* Hello,World\!
+
+\`Hehehe\`
