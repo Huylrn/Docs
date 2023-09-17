@@ -32,6 +32,7 @@ note: nơi làm việc là vị trí directory đang đứng.
    ||note-[opstion]:
        > -r :Dùng để copy directory.
        > -n :Không copy các tệp đã tồn tại ở thư mục dích.||
+
 8. "cat" :In tất cả thông tin trong file.
    "cat test_h.txt > test_new.txt" :Ghi nội dung trong file test_h.txt vào test_new.txt, phương thức ghi là ghi đè (Sử dụng được cho tất cả các lệnh có đầu ra, vd: echo,.. ,Cú pháp: ... > ....).
    "cat test_h.txt >> test_new.txt" :Ghi nội dung file test_h.txt vào cuối file test_new.txt.
@@ -97,7 +98,8 @@ l - link(shortcuts)
     vd: "tar -cvf file.zip file1.txt file2.txt"
         "tar -xvf file.zip" :Giải nén tại thư mục chứa 'file.zip' .
 
-
+16.
+   "chsh -s /bin/'zsh, bash,...' " :Thay đổi shell mặc định.
 
 --Tips--
 note: '^': Control.
@@ -110,5 +112,6 @@ note: '^': Control.
    ^l :clear screnn
    comand + k :clear tab.
    comand + l :clear tab.
+
 ===Alias===
 #. "alias" :shortcuts của các lệnh.
