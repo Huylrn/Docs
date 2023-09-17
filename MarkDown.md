@@ -14,7 +14,7 @@
     + [6.1 Ordered List](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#61-ordered-list)
     + [6.2 Unordered List](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#62-unordered-list)
     + [6.3 Adding elements in list](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#63-adding-elements-in-list-all)
-7. [Adding Code](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#7-adding-code)
+7. [Adding Code](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#7-code)
 8. [Horizontal rules](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#8-horizontal-rules-%C4%91%C6%B0%E1%BB%9Dng-k%E1%BA%BB-n%E1%BA%B1m-ngang)
 9. [Link](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#9-link)
 10. [Images](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#10-imagessource)
@@ -161,12 +161,44 @@ The Rendered output looks like this:
 
 #### 6.3 Adding elements in list (All)
 
-## 7. Adding Code
+## 7. Code
 
         `print("Hello,World!")`
 
 The Rendered outout looks like this:
  `print("Hello,World!")`
+
+ ---
+
+ + Formatting code.
+
+       ```html
+       <!DOCTYPE html>
+               <html lang="en">
+               <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Document</title>
+               </head>
+               <body>
+    
+               </body>
+               </html>
+       ```
+
+```html
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+ </body>
+ </html>
+```
 
 ## 8. Horizontal rules (Đường kẻ nằm ngang)
 
