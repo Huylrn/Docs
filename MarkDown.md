@@ -1,4 +1,4 @@
--# MARKDOWN
+# [MARKDOWN](https://www.markdownguide.org/basic-syntax/#overview)
 
 ## 1. Headings (Tiêu đề)
 
@@ -144,7 +144,7 @@ The Rendered output looks like this:
 The Rendered outout looks like this:
  `print("Hello,World!")`
 
-## 8. Horizontal rules
+## 8. Horizontal rules (Đường kẻ nằm ngang)
 
         ***
         ---
