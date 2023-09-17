@@ -17,7 +17,7 @@
 7. [Adding Code](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#7-adding-code)
 8. [Horizontal rules](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#8-horizontal-rules-%C4%91%C6%B0%E1%BB%9Dng-k%E1%BA%BB-n%E1%BA%B1m-ngang)
 9. [Link](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#9-link)
-10. [Images](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#10-images)
+10. [Images](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#10-imagessource)
 11. [ \ ](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#11-d%C3%B9ng----%C4%91%E1%BB%83-lo%E1%BA%A1i-b%E1%BB%8F-c%C3%A1c-l%E1%BB%87nh)
 
 ***
