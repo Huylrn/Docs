@@ -52,15 +52,15 @@ Note: Max là level 6 (######).
     
 ## 4. Emphasis (Nhấn mạnh)
 
-1. ###### Bold
+1. #### Bold
         **bold text**
         or 
         __bold text__
-2. ###### Italic 
+2. #### Italic 
         *italic text*
         or
         _italic text_
-3. ###### Bold and Italic
+3. #### Bold and Italic
         ***italic and bold text***
 
         ___italic and bold text___
