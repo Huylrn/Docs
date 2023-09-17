@@ -1,16 +1,21 @@
 -# MARKDOWN
 
 ## 1. Headings (Tiêu đề)
+
 ###### Sử dụng < #|-|= > để tạo tiêu đề.
+
     "# Heading level 1."
     or
     "Heding level 1.
     ="
+    
 ---
+
     "## Heading level 2."
     or
     "Heading level 2.
     -"
+    
 Note: Max là level 6 (######).
 
 ## 2. Paragraphs (Văn bản)
@@ -21,6 +26,7 @@ Note: Max là level 6 (######).
     And this is the second line.
     
 ## 4. Emphasis (Nhấn mạnh)
+
 1. ###### Bold
         **bold text**
         or 
@@ -43,40 +49,105 @@ Note: Max là level 6 (######).
         _*_italic and bold text_*_
         
 ## 5. Blockquotes
--
+
         > Followed me.
 The Rendered output looks like this:
 
 > Followed me.
+
 ---
--
-        "Blockquotes with multiple paragrahs".
+
+#### 5.1 Blockquotes with multiple paragrahs
+
         > Dorothy followed her through many of the beautiful rooms in her castle.
         > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
 The Rendered output looks like this:
 
 > Dorothy followed her through many of the beautiful rooms in her castle.
 > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
 ---
--
-        "Blockquotes with multiple paragrahs".
-        > Dorothy followed her through many of the beautiful rooms in her castle.
-        
-        > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-    
-        |or|
+
+#### 5.2 Nested Blockquotes
 
         > Dorothy followed her through many of the beautiful rooms in her castle.
         >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
 The Rendered output looks like this:
 
 > Dorothy followed her through many of the beautiful rooms in her castle.
 >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
-## 6.
+---
 
-2. Paragraphs
+#### 5.3 Blockquotes with other elements
 
-I really like using Markdown.
+        > #### The quarterly results look great!
+        >
+        > - Revenue was off the chart.
+        > - Profits were higher than ever.
+        >
+        >  *Everything* is going according to **plan**.
 
-I think I'll use it to format all of my documents from now on.
+The Rendered output looks like this:
+
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+
+## 6. List (Danh Sách)
+
+#### 6.1 Ordered List
+
+        1. first item
+        2. second item
+        3. third item 
+
+---
+        
+        1. first item
+        2. second item
+            1. first item
+            2. second item
+        4. third item
+
+#### 6.2 Unordered List
+
+        - first item
+        - second item
+        
+---
+
+        + first item
+        + second item
+        
+---
+
+        * first item
+        * second item
+
+---
+
+        -first item
+            + first item
+
+#### 6.3 Adding elements in list (All)
+
+## 7. Adding Code
+
+        `print("Hello,World!")`
+
+The Rendered outout looks like this:
+ `print("Hello,World!")`
+
+## 8. Horizontal rules
+
+        ***
+        ---
+        ___
+
+## 9.
