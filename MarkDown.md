@@ -1,7 +1,6 @@
 # [MARKDOWN](https://www.markdownguide.org/basic-syntax/#overview)
 - [MARKDOWN](#markdown)
   - [1. Headings - Tiêu đề](#1-headings---tiêu-đề)
-          - [Sử dụng \< #|-|= \> để tạo tiêu đề.](#sử-dụng-----để-tạo-tiêu-đề)
   - [2. Paragraphs - Văn bản](#2-paragraphs---văn-bản)
   - [3. Line break - Tạo nhiều dòng](#3-line-break---tạo-nhiều-dòng)
   - [4. Emphasis - Nhấn mạnh](#4-emphasis---nhấn-mạnh)
@@ -31,7 +30,7 @@
 
 ## 1. Headings - Tiêu đề
 
-###### Sử dụng < #|-|= > để tạo tiêu đề.
+ Sử dụng < #|-|= > để tạo tiêu đề.
 
     "# Heading level 1."
     or
@@ -99,7 +98,6 @@ The Rendered output looks like this:
 
 > Followed me.
 
----
 
 #### 5.1 Blockquotes with multiple paragrahs
 
@@ -111,7 +109,7 @@ The Rendered output looks like this:
 > Dorothy followed her through many of the beautiful rooms in her castle.
 > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
----
+
 
 #### 5.2 Nested Blockquotes
 
@@ -123,7 +121,7 @@ The Rendered output looks like this:
 > Dorothy followed her through many of the beautiful rooms in her castle.
 >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
----
+
 
 #### 5.3 Blockquotes with other elements
 
