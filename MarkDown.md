@@ -7,8 +7,9 @@
       - [4.1 Bold](#41-bold)
       - [4.2 Italic](#42-italic)
       - [4.3 Bold and Italic](#43-bold-and-italic)
-      - [4.4 Subscript and Superscript](#44-subscript-and-superscript)
-      - [4.5 Strikethrough - Gạch bỏ](#45-strikethrough---gạch-bỏ)
+      - [4.4](#44)
+      - [4.5 Subscript and Superscript](#45-subscript-and-superscript)
+      - [4.6 Strikethrough - Gạch bỏ](#46-strikethrough---gạch-bỏ)
   - [5. Blockquotes - Khối trích dẫn](#5-blockquotes---khối-trích-dẫn)
       - [5.1 Blockquotes with multiple paragrahs](#51-blockquotes-with-multiple-paragrahs)
       - [5.2 Nested Blockquotes](#52-nested-blockquotes)
@@ -17,11 +18,12 @@
       - [6.1 Ordered List - Theo bậc](#61-ordered-list---theo-bậc)
       - [6.2 Unordered List - Không theo bậc](#62-unordered-list---không-theo-bậc)
       - [6.3 Adding elements in list (All)](#63-adding-elements-in-list-all)
+      - [6.4 Task List](#64-task-list)
   - [7. Code](#7-code)
   - [8. Horizontal rules - Đường kẻ nằm ngang](#8-horizontal-rules---đường-kẻ-nằm-ngang)
   - [9. Link](#9-link)
   - [10. Images](#10-images)
-  - [11. Table](#11-table)
+  - [11. Table - Bảng](#11-table---bảng)
   - [12. Dùng \< \\ \> để loại bỏ các lệnh](#12-dùng----để-loại-bỏ-các-lệnh)
 
 ***
@@ -64,7 +66,12 @@ Note: Max là level 6 (######).
         or
         _italic text_
 #### 4.3 Bold and Italic
+        \(italic and bold text\)
+
         ***italic and bold text***
+
+---
+`more`
 
         ___italic and bold text___
         
@@ -76,16 +83,17 @@ Note: Max là level 6 (######).
         
         _*_italic and bold text_*_
         
-#### 4.4 Subscript and Superscript
+#### 4.4 
+
+#### 4.5 Subscript and Superscript
         <sub>Subscript</sub>  
         <sup>Superscript</sup>
 > This is a <sub>subscript</sub> text.
 
 > This ia a <sup>Superscript</sup> text.
  
----
 
-#### 4.5 Strikethrough - Gạch bỏ
+#### 4.6 Strikethrough - Gạch bỏ
         ~~Noa"-"~~
 > ~~Noa"-"~~
 
@@ -179,6 +187,17 @@ The Rendered output looks like this:
 
 #### 6.3 Adding elements in list (All)
 
+#### 6.4 Task List
+```py
+- [x] First item.
++ [ ] Second item.
+* [ ] Third item
+```
+The rendered looks like this:
+- [x] First item.
++ [ ] Second item.
+* [ ] Third item
+
 ## 7. Code
 
         `print("Hello,World!")`
@@ -202,7 +221,7 @@ The Rendered outout looks like this:
     
         </body>
         </html>
-       ```
+         ```
 
 ```html
 <!DOCTYPE html>
@@ -239,7 +258,7 @@ The Rendered outout looks like this:
 
 <img width="230" alt="image" src="https://github.com/Huylrn/Docs/assets/141661219/bee8aef2-1022-4630-9483-f7be7890b032">
 
-## 11. Table
+## 11. Table - Bảng
 
     |A\B|B1|B2|B3|
     |-|-|-|-|
