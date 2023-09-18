@@ -1,31 +1,35 @@
 # [MARKDOWN](https://www.markdownguide.org/basic-syntax/#overview)
-1. [Headings](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#1-headings-ti%C3%AAu-%C4%91%E1%BB%81source)
-2. [Paragraphs](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#2-paragraphs-v%C4%83n-b%E1%BA%A3n)
-3. [Line break](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#3-line-break-t%E1%BA%A1o-nhi%E1%BB%81u-d%C3%B2ng)
-4. [Emphasis](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#4-emphasis-nh%E1%BA%A5n-m%E1%BA%A1nh)
-    + [Bold](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#bold)
-    + [Italic](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#italic)
-    + [Bold and Italic](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#bold-and-italic) 
-5. [Blockquotes](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#5-blockquotes)
-    + [5.1 Blockquotes with multiple paragrahs](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#51-blockquotes-with-multiple-paragrahs)
-    + [5.2 Nested Blockquotes](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#52-nested-blockquotes)
-    + [5.3 Blockquotes with other elements](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#53-blockquotes-with-other-elements)
-6. [List](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#6-list-danh-s%C3%A1ch)
-    + [6.1 Ordered List](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#61-ordered-list)
-    + [6.2 Unordered List](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#62-unordered-list)
-    + [6.3 Adding elements in list](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#63-adding-elements-in-list-all)
-7. [Code](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#7-code)
-8. [Horizontal rules](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#8-horizontal-rules-%C4%91%C6%B0%E1%BB%9Dng-k%E1%BA%BB-n%E1%BA%B1m-ngang)
-9. [Link](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#9-link)
-10. [Images](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#10-imagessource)
-11. [Table](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#11-table)
-12. [ \ ](https://github.com/Huylrn/Docs/blob/master/MarkDown.md#11-d%C3%B9ng----%C4%91%E1%BB%83-lo%E1%BA%A1i-b%E1%BB%8F-c%C3%A1c-l%E1%BB%87nh)
+- [MARKDOWN](#markdown)
+  - [1. Headings - Tiêu đề](#1-headings---tiêu-đề)
+          - [Sử dụng \< #|-|= \> để tạo tiêu đề.](#sử-dụng-----để-tạo-tiêu-đề)
+  - [2. Paragraphs - Văn bản](#2-paragraphs---văn-bản)
+  - [3. Line break - Tạo nhiều dòng](#3-line-break---tạo-nhiều-dòng)
+  - [4. Emphasis - Nhấn mạnh](#4-emphasis---nhấn-mạnh)
+      - [4.1 Bold](#41-bold)
+      - [4.2 Italic](#42-italic)
+      - [4.3 Bold and Italic](#43-bold-and-italic)
+      - [4.4 Subscript and Superscript](#44-subscript-and-superscript)
+      - [4.5 Strikethrough - Gạch bỏ](#45-strikethrough---gạch-bỏ)
+  - [5. Blockquotes - Khối trích dẫn](#5-blockquotes---khối-trích-dẫn)
+      - [5.1 Blockquotes with multiple paragrahs](#51-blockquotes-with-multiple-paragrahs)
+      - [5.2 Nested Blockquotes](#52-nested-blockquotes)
+      - [5.3 Blockquotes with other elements](#53-blockquotes-with-other-elements)
+  - [6. List - Danh Sách](#6-list---danh-sách)
+      - [6.1 Ordered List - Theo bậc](#61-ordered-list---theo-bậc)
+      - [6.2 Unordered List - Không theo bậc](#62-unordered-list---không-theo-bậc)
+      - [6.3 Adding elements in list (All)](#63-adding-elements-in-list-all)
+  - [7. Code](#7-code)
+  - [8. Horizontal rules - Đường kẻ nằm ngang](#8-horizontal-rules---đường-kẻ-nằm-ngang)
+  - [9. Link](#9-link)
+  - [10. Images](#10-images)
+  - [11. Table](#11-table)
+  - [12. Dùng \< \\ \> để loại bỏ các lệnh](#12-dùng----để-loại-bỏ-các-lệnh)
 
 ***
 ***
 ***
 
-## 1. Headings (Tiêu đề)[#Source](https://www.markdownguide.org/basic-syntax/#headings)
+## 1. Headings - Tiêu đề
 
 ###### Sử dụng < #|-|= > để tạo tiêu đề.
 
@@ -43,24 +47,24 @@
     
 Note: Max là level 6 (######).
 
-## 2. Paragraphs (Văn bản)
+## 2. Paragraphs - Văn bản
     This is paragraphs.
     
-## 3. Line break (Tạo nhiều dòng)
+## 3. Line break - Tạo nhiều dòng
     This is the first line.
     And this is the second line.
     
-## 4. Emphasis (Nhấn mạnh)
+## 4. Emphasis - Nhấn mạnh
 
-1. #### Bold
+#### 4.1 Bold
         **bold text**
         or 
         __bold text__
-2. #### Italic 
+#### 4.2 Italic 
         *italic text*
         or
         _italic text_
-3. #### Bold and Italic
+#### 4.3 Bold and Italic
         ***italic and bold text***
 
         ___italic and bold text___
@@ -73,7 +77,22 @@ Note: Max là level 6 (######).
         
         _*_italic and bold text_*_
         
-## 5. Blockquotes
+#### 4.4 Subscript and Superscript
+        <sub>Subscript</sub>  
+        <sup>Superscript</sup>
+> This is a <sub>subscript</sub> text.
+
+> This ia a <sup>Superscript</sup> text.
+ 
+---
+
+#### 4.5 Strikethrough - Gạch bỏ
+        ~~Noa"-"~~
+> ~~Noa"-"~~
+
+
+## 5. Blockquotes - Khối trích dẫn
+
 
         > Followed me.
 The Rendered output looks like this:
@@ -124,9 +143,9 @@ The Rendered output looks like this:
 >
 >  *Everything* is going according to **plan**.
 
-## 6. List (Danh Sách)
+## 6. List - Danh Sách
 
-#### 6.1 Ordered List
+#### 6.1 Ordered List - Theo bậc
 
         1. first item
         2. second item
@@ -140,7 +159,7 @@ The Rendered output looks like this:
             2. second item
         4. third item
 
-#### 6.2 Unordered List
+#### 6.2 Unordered List - Không theo bậc
 
         - first item
         - second item
@@ -201,7 +220,7 @@ The Rendered outout looks like this:
  </html>
 ```
 
-## 8. Horizontal rules (Đường kẻ nằm ngang)
+## 8. Horizontal rules - Đường kẻ nằm ngang
 
         ***
         ---
@@ -213,7 +232,7 @@ The Rendered outout looks like this:
 > [Me§](https://github.com/Huylrn)
 * Formatting Links -> Ok
 
-## 10. Images[#Source](https://www.markdownguide.org/basic-syntax/#images-1)
+## 10. Images
 
 😄`Command + V` from image.
 
