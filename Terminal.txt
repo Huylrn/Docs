@@ -107,6 +107,7 @@ note: '^': Control.
    ^e :về cuối dòng
    ^w :xóa 1 từ
    ^u :xóa 1 line
+   ^q :Xóa tạm thời 1 dòng, sau khi thực hiện 1 lệnh bất kì sẽ tự động hiện lại dòng đã xóa.
    ^r :Tìm kiếm command đã từng thực hiện.
    ^y :add lại từ xóa bằng ^w
    ^l :clear screnn
