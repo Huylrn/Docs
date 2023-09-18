@@ -24,7 +24,8 @@
   - [9. Link](#9-link)
   - [10. Images](#10-images)
   - [11. Table - Bảng](#11-table---bảng)
-  - [12. Dùng \< \\ \> để loại bỏ các lệnh](#12-dùng----để-loại-bỏ-các-lệnh)
+  - [12. Note](#12-note)
+  - [13. Dùng \< \\ \> để loại bỏ các lệnh](#13-dùng----để-loại-bỏ-các-lệnh)
 
 ***
 ***
@@ -271,7 +272,15 @@ The Rendered outout looks like this:
 |A2 |5|6|2|
 |A3 |6|9|0|
 
-## 12. Dùng < \ > để loại bỏ các lệnh
+## 12. Note
+        [^1]: Note is here.
+        Note? [^1]
+[^1]: Note is here.
+
+> Note? [^1]
+
+
+## 13. Dùng < \ > để loại bỏ các lệnh
         \* Helle,World\!
         \`Hehehe\`
 \* Hello,World\!
