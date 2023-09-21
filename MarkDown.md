@@ -1,4 +1,4 @@
-# [MARKDOWN](https://www.markdownguide.org/basic-syntax/#overview)
+# [MARKDOWN](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
 - [MARKDOWN](#markdown)
   - [1. Headings - Tiêu đề](#1-headings---tiêu-đề)
   - [2. Paragraphs - Văn bản](#2-paragraphs---văn-bản)
@@ -26,7 +26,8 @@
   - [11. Table - Bảng](#11-table---bảng)
   - [12. FootNotes - Tạo ghi chú](#12-footnotes---tạo-ghi-chú)
   - [13. Comments](#13-comments)
-  - [14. Dùng \< \\ \> để ngăn chặn các lệnh](#14-dùng----để-ngăn-chặn-các-lệnh)
+  - [14. Collapsed sections - Danh sách có thể tương tác](#14-collapsed-sections---danh-sách-có-thể-tương-tác)
+  - [17. Dùng \< \\ \> để ngăn chặn các lệnh](#17-dùng----để-ngăn-chặn-các-lệnh)
 
 ***
 ***
@@ -284,8 +285,37 @@ The Rendered outout looks like this:
 ```
 <!-- Write comments is here. -->
 ```
+## 14. Collapsed sections - Danh sách có thể tương tác 
 
-## 14. Dùng < \ > để ngăn chặn các lệnh
+````
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+```ruby
+   puts "Hello World"
+```
+</details>
+````
+
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
+## 17. Dùng < \ > để ngăn chặn các lệnh
         \* Helle,World!\*
         \`Hehehe\`
 \* Hello,World!\*
