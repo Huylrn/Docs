@@ -286,8 +286,8 @@ The Rendered outout looks like this:
 ```
 
 ## 14. Dùng < \ > để ngăn chặn các lệnh
-        \* Helle,World\!
+        \* Helle,World\!*
         \`Hehehe\`
-\* Hello,World\!
+\* Hello,World\!*
 
 \`Hehehe\`
