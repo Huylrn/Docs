@@ -1,6 +1,6 @@
                         ===~GIT~=====
 ==GITHUB==
-# "rm -fr .git" :Xóa git khỏi diretory.
+# "rm -fr .git" :Xóa git khỏi directory.
 1. "git remote add origin 'link repository' " :Liên kết git với github.
    "git remote add origin new-url 'link repository' " :Liên kết thêm với repository khác.
    "git remote rm origin" :Xóa all liên kết.
@@ -47,7 +47,7 @@
    "git restore --staged 'filename' " :Tương tự.
    "git reset -- mixed 'ID-commit' " :Gỡ commit trước 'ID-commit' và Undo về trước khi git add.
    "git reset --soft 'ID-commit' " :Gỡ commit trước 'ID-commit'.
-   "git reset --hard 'ID-cmmit' " :Xóa commit trước 'ID-commit'.
+   "git reset --hard 'ID-commit' " :Xóa commit trước 'ID-commit'.
 
 10. "git revert 'ID-commit' " :Xóa những thay đổi tại 'ID-commit'.
 
