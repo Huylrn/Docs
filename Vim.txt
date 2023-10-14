@@ -4,7 +4,7 @@
 % Vi(Vim) demo.html ->(Mở vim với file demo.html(*) ,nếu chưa có file (*) thì tạo file (*) mới).
 0. ":q" :Thoát.
    ":q!" :Thoát không lưu.
-   ":w" :Lưu(Có thể lưu vào file mới, vd: ':w file.txt').
+   ":w" :Lưu (Có thể lưu file với tên mới, vd: ':w file.txt').
    ":#1,#2 w Flie.txt" : Lưa từ #1 -> #2 (Như dưới).
    ":r" :Chèn nội dung file vào tại vị trí con trỏ.
    ":wq" :Lưu và thoát(":x" :Tương tự).
@@ -35,7 +35,7 @@
    "/(?) và theo sau là cụm từ muốn tìm kiếm" :"/" là tìm kiếm về cuối, "?" là tìm kiếm về đầu (n hoặc Shift-n đễ di chuyển giữa các kết quả và nó dùng cho mọi loại tìm kiếm) .
    "#" :Tìm kiếm chữ tại con trỏ chuột.
    "%" :để tìm kiếm ),], hay } (Để con trỏ tại đầu hoặc cuối dấu '[],{},()' thì di chuyển đến phía còn dấu lại hoặc nó sẽ tìm cặp '{}.[],()' gần nhất tính từ vị trí con trỏ).
-   ":set ic" :Thêm chữ ghi hoa trong kết quả tìm kim.
+   ":set ic" :Thêm chữ ghi hoa trong kết quả tìm kiếm.
    ":set hls is" :highlight kết quả tìm kiếm.
    ":nohlsearch" :Ẩn các highlight đang hiện,
    ":s/cũ/mới/" :Thay thế từ cũ thành từ mới trên dòng tại vị trí con trỏ và từ tìm được đầu tiên trên dòng (Nếu :s/ / /g thì sẽ thay đổi tất cả từ được tìm tại dòng có con trỏ chuột).

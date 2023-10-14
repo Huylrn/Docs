@@ -29,7 +29,7 @@ note: nơi làm việc là vị trí directory đang đứng.
 
 7. "cp" :Copy file (1) sang file (2) và nếu file (2) chưa được tạo thì sẽ tạo một file(2) mới .
 	Ex: cp test.txt(1) testCopy.txt(2).
-   ||note-[opstion]:
+   ||note-[option]:
        > -r :Dùng để copy directory.
        > -n :Không copy các tệp đã tồn tại ở thư mục dích.||
 
@@ -37,7 +37,7 @@ note: nơi làm việc là vị trí directory đang đứng.
    "cat test_h.txt > test_new.txt" :Ghi nội dung trong file test_h.txt vào test_new.txt, phương thức ghi là ghi đè (Sử dụng được cho tất cả các lệnh có đầu ra, vd: echo,.. ,Cú pháp: ... > ....).
    "cat test_h.txt >> test_new.txt" :Ghi nội dung file test_h.txt vào cuối file test_new.txt.
    "cat file.txt | grep 'từ cần tìm' " : in ra tất cả dòng có từ cần tìm.
-   "cat -n" :opstion.
+   "cat -n" :option.
    "cat -n 'fileName' | sed -n 'lineA,lineBp'" :In từ lineA -> lineB.
       vd:cat -n file.txt | sed -n '1,10p' .
    "sed -n 'lineA,lineBp' file name" :Như cat , in từ lineA -> lineB.
@@ -48,7 +48,7 @@ note: nơi làm việc là vị trí directory đang đứng.
    "tail -f file.txt" :Theo dõi(dùng chung với split Panel).
 
 9. "rm" :Xóa file.
-   ||note-[opstion]:
+   ||note-[option]:
         > -r :Xóa các thư mục có thư mục con or file bên trong.||
 
    "rm -fr" :Xóa git.
@@ -56,7 +56,7 @@ note: nơi làm việc là vị trí directory đang đứng.
 
 10. "mkdir" :Tạo Folder.
     "mkdir -pv" :Tạo nhiều Folder con.
-    ||note-[opstion]:
+    ||note-[option]:
         > -v :Hiển thị các directory đã tạo ra màn hình (message).
         > -p(parent) :Cùng tạo nhiều directory cùng lúc.||
 
@@ -69,7 +69,7 @@ r,4 - read
 w,2 - write
 x,1 - Execute :Thực thi
 0 - no permission
-d - diretory
+d - directory
 l - link(shortcuts)
 '-'(Ở đầu dòng) - file(-rwxr-xr-w)
  Ex:
@@ -86,8 +86,8 @@ l - link(shortcuts)
 14. "web_search 'bing,google,..' 'Từ khóa' " :Tìm kiếm trên internet.
 
 15. Nén và giải nén (tar)
-    "tar -[opstion] <Compress-Name (.zip, .tar,... )> <Files need compress>".
-    ||note-[opstion]:
+    "tar -[option] <Compress-Name (.zip, .tar,... )> <Files need compress>".
+    ||note-[option]:
           > -c :Tạo file mới(Phải có khi nén file).
           > -v :Hiển thị quá trình nén or giải nén.
           > -f :Là tùy chọn để chỉ định tên của tệp tin cần giải nén (Phải có).
@@ -109,10 +109,10 @@ note: '^': Control.
    ^u :xóa 1 line
    ^q :Xóa tạm thời 1 dòng, sau khi thực hiện 1 lệnh bất kì sẽ tự động hiện lại dòng đã xóa.
    ^r :Tìm kiếm command đã từng thực hiện.
-   ^y :add lại từ xóa bằng ^w
-   ^l :clear screnn
-   comand + k :clear tab.
-   comand + l :clear tab.
+   ^y :add lại từ xóa bằng ^w.
+   ^l :clear screen.
+   command + k :clear tab.
+   command + l :clear tab.
 
 ===Alias===
 #. "alias" :shortcuts của các lệnh.

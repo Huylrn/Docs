@@ -7,7 +7,7 @@
 
 2. "git push -u origin 'branch name' " :push lần đầu.
    note: passwork là token,
-         cách truy cập your token: Settings -> Developer settings -> Personal access tokens -> Generat new token.
+         cách truy cập your token: Settings -> Developer settings -> Personal access tokens -> Generate new token.
 
 3. "git push" :Đẩy code lên github, dùng khi có 1 nhánh.
    "git push origin 'branch_Name' " :Dùng khi có nhiều nhánh.
@@ -36,7 +36,7 @@
    "git log --oneline" : Mỗi commit chỉ hiển thị một dòng, bao gồm ID commit và dòng đầu tiên của messages (cách này có vẻ dễ nhìn nhất).
    "git log -p" :Hiển thị chi tiết thông tin commit, bao gồm cả nội dung thay đổi (thêm/xóa dòng code nào), tuy nhiên nếu có nhiều sự thay đổi, cách này nhìn khá là dài và rườm rà.
 
-6. "git show + opstion '35397c3349157245405b09d9a44504b0f7b33be6'" :Show chi tiết thay đổi của 1 commit.
+6. "git show + option '35397c3349157245405b09d9a44504b0f7b33be6'" :Show chi tiết thay đổi của 1 commit.
 
 7. "git diff" :Xem sự khác biệt của modified với file trước đó.
 
