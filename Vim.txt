@@ -39,7 +39,7 @@
    ":set hls is" :highlight kết quả tìm kiếm.
    ":nohlsearch" :Ẩn các highlight đang hiện,
    ":s/cũ/mới/" :Thay thế từ cũ thành từ mới trên dòng tại vị trí con trỏ và từ tìm được đầu tiên trên dòng (Nếu :s/ / /g thì sẽ thay đổi tất cả từ được tìm tại dòng có con trỏ chuột).
-      note: opstion 'g' Để thay thế tất cả.
+      note: option 'g' Để thay thế tất cả.
    ":%s/cũ/mới/g" :Thay thế thế toàn bộ trong file.
    ":#1,#2s/cũ/mới/g" :(Trong đó #1,#2 là số thứ tự của hai dòng) Thay đổi từ dòng #1 tới dòng
 #2.
