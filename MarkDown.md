@@ -5,13 +5,16 @@
   - [1. Headings - Tiêu đề](#1-headings---tiêu-đề)
   - [2. Paragraphs - Văn bản](#2-paragraphs---văn-bản)
   - [3. Line break - Tạo nhiều dòng](#3-line-break---tạo-nhiều-dòng)
-  - [4. Emphasis - Nhấn mạnh](#4-emphasis---nhấn-mạnh)
+  <details>
+  <summary>- [4. Emphasis - Nhấn mạnh](#4-emphasis---nhấn-mạnh) </summary>
       - [4.1 Bold](#41-bold)
       - [4.2 Italic](#42-italic)
       - [4.3 Bold and Italic](#43-bold-and-italic)
       - [4.4](#44)
       - [4.5 Subscript and Superscript](#45-subscript-and-superscript)
       - [4.6 Strikethrough - Gạch bỏ](#46-strikethrough---gạch-bỏ)
+</details>
+
   - [5. Blockquotes - Khối trích dẫn](#5-blockquotes---khối-trích-dẫn)
       - [5.1 Blockquotes with multiple paragrahs](#51-blockquotes-with-multiple-paragrahs)
       - [5.2 Nested Blockquotes](#52-nested-blockquotes)
