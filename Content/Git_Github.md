@@ -1,5 +1,6 @@
-# ==**GIT**== / **GITHUB**
-:warning: ```rm -fr .git``` :Xóa git khỏi directory.
+# **GIT** / **GITHUB**
+:warning: `rm -fr .git` :Xóa git khỏi directory.
+---
 1. "git remote add origin 'link repository' " :Liên kết git với github.
    "git remote add origin new-url 'link repository' " :Liên kết thêm với repository khác.
    "git remote rm origin" :Xóa all liên kết.
