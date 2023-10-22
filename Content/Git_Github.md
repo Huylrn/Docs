@@ -6,14 +6,16 @@
 ## Start new project
 
 > :book: `<...>` :Là nơi bạn cần điền vào.
+1. #### **git remote**
+   + `git remote add origin <link repository>` :Liên kết git với github qua link.
+   + `git remote add origin new-url <link repository>` :Liên kết thêm với repository khác.
+   + `git remote rm origin` :Xóa all liên kết.
 
-1. `git remote add origin <link repository>` :Liên kết git với github qua link.
-   `git remote add origin new-url <link repository>` :Liên kết thêm với repository khác.
-   `git remote rm origin` :Xóa all liên kết.
-
-1. `git push -u origin <branch name> ` :Lần đầu tiên push.
-   note: passwork là token,
-         cách truy cập your token: Settings -> Developer settings -> Personal access tokens -> Generate new token.
+2. #### git push
+ `git push -u origin <branch name> ` :Lần đầu tiên push.
+   :book:
+>* *Passwork* là token,
+>* **cách truy cập your token**: `Settings` **->** `Developer settings` **->** `Personal access tokens` **->** `Generate new token`.
 
 2. `git push` :Đẩy code lên github, dùng khi có 1 nhánh.
    `git push origin <branch_Name> ` :Dùng khi có nhiều nhánh.
