@@ -1,23 +1,29 @@
 # **GIT** / **GITHUB**
-:warning: `rm -fr .git` :Xóa git khỏi directory.
----
-1. "git remote add origin 'link repository' " :Liên kết git với github.
-   "git remote add origin new-url 'link repository' " :Liên kết thêm với repository khác.
-   "git remote rm origin" :Xóa all liên kết.
+`rm -fr .git` :Xóa git khỏi directory **:warning:**
 
-2. "git push -u origin 'branch name' " :push lần đầu.
+---
+
+## Start new project
+
+> :book: `<...>` :Là nơi bạn cần điền vào.
+
+1. `git remote add origin <link repository>` :Liên kết git với github qua link.
+   `git remote add origin new-url <link repository>` :Liên kết thêm với repository khác.
+   `git remote rm origin` :Xóa all liên kết.
+
+1. `git push -u origin <branch name> ` :Lần đầu tiên push.
    note: passwork là token,
          cách truy cập your token: Settings -> Developer settings -> Personal access tokens -> Generate new token.
 
-3. "git push" :Đẩy code lên github, dùng khi có 1 nhánh.
-   "git push origin 'branch_Name' " :Dùng khi có nhiều nhánh.
+2. `git push` :Đẩy code lên github, dùng khi có 1 nhánh.
+   `git push origin <branch_Name> ` :Dùng khi có nhiều nhánh.
 
-4. "git pull" :Kéo new commit từ github về, dùng khi có 1 nhánh.
+3. "git pull" :Kéo new commit từ github về, dùng khi có 1 nhánh.
    "git pull origin 'branch_Name' " :Dùng khi có nhiều nhánh.
 
-5. "git clone 'link repository' " :Sao chép repository từ github về.
+4. "git clone 'link repository' " :Sao chép repository từ github về.
 
-6. "git fetch origin 'branch_Name' " :review branch, khác với pull.
+5. "git fetch origin 'branch_Name' " :review branch, khác với pull.
 
 ==/Users/huuynguyen/WorkSpace/Learn_Git/1-commit==
             --Start--
