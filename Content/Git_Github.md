@@ -1,11 +1,11 @@
 # **GIT** / **GITHUB**
-`rm -fr .git` :Xóa git khỏi directory **:warning:**
+**:warning:**`rm -fr .git` :Xóa git khỏi directory **:warning:**
+> :book: `<...>` :Là nơi bạn cần điền vào.
 
 ---
 
 ## Start new project
-
-> :book: `<...>` :Là nơi bạn cần điền vào.
+   **:exclamation:**`git init` :Bắt đầu project.
 1. #### **git remote**
    + `git remote add origin <link repository>` :Liên kết git với github qua link.
    + `git remote add origin new-url <link repository>` :Liên kết thêm với repository khác.
@@ -20,63 +20,82 @@
    + `git push` :Đẩy code lên github, dùng khi có 1 nhánh.
    + `git push origin <branch_Name> ` :Dùng khi có nhiều nhánh.
 
-4. "git pull" :Kéo new commit từ github về, dùng khi có 1 nhánh.
-   "git pull origin 'branch_Name' " :Dùng khi có nhiều nhánh.
+3. #### git pull
+   + `git pull` :Kéo new commit từ github về, dùng khi có 1 nhánh.
+   + `git pull origin <branch_Name> ` :Dùng khi có nhiều nhánh.
+4. #### git clone   
+   + `git clone <link repository> ` :Sao chép repository từ github về.
+   
+   
+   + `git fetch origin <branch_Name> ` :review branch, khác với pull.
 
-5. "git clone 'link repository' " :Sao chép repository từ github về.
+5. #### Basic
+   + `git status` :Xem trạng thái của repository có git.
+   
+   + #### git add  
+      + `git add` :Add file new vào git.
+      + `git add .` :Add tất cả.
 
-6. "git fetch origin 'branch_Name' " :review branch, khác với pull.
+   + #### git commit
+      + `git commit` :Dùng sau **git add**, nôm na là đóng gói lại và không có nhãn.
+      + `git commit -m <label>` :Commit có nhãn.
+      + `git commit -am <label>` :Commit không cần dùng **git add**, sử dụng đối với các file đã từng **git add** rồi.
+       
 
-==/Users/huuynguyen/WorkSpace/Learn_Git/1-commit==
-            --Start--
-1. "git init" :Bắt đầu project.
+   + #### git log
+      + `git log` :Show history commit.
+      + `git log --reverse` :Hiển thị tương tự git log, nhưng thứ tự sắp xếp commit ngược lại.
+      + `git log --oneline` : Mỗi commit chỉ hiển thị một dòng, bao gồm ID commit và dòng đầu tiên của messages (cách này có vẻ dễ nhìn nhất).
+      + `git log -p` :Hiển thị chi tiết thông tin commit, bao gồm cả nội dung thay đổi (thêm/xóa dòng code nào).
 
-2. "git status" :Trạng thái của git.
+   + #### git show
+      >:book:
+      >**options** lấy từ **git log**.
+      >> **\<options> is 61636ab278c101a5e189b228f007f07416579289**
+      + `git show <options>` :Show chi tiết thay đổi của 1 commit.
 
-3. "git add" :Add file new vào git.
-   "git add ." :Add tất cả.
+   + #### git diff
+      + `git diff` :Xem sự khác biệt của modified với file ban đầu.
 
-4. "git commit" :Dùng sau add, nôm na là đóng gói lại.
-   "git commit -m 'label'" :Commit có nhãn.
+   + #### Undo 
+      + `git restore <filename> ` :Quay lại trước khi thay đổi nội dung trong file.:+1:
+      + `git checkout --<filename> ` :Tương tự.:-1:
+   
+   + #### Undo
+      + `git reset HEAD <filename> ` :Undo về trước khi đã dùng **git add**.:+1:
+      + `git restore --staged <filename> ` :Tương tự.:-1:
+      
+      ---
 
-5. "git log" :Show history commit.
-   "git log --reverse" :Hiển thị tương tự git log, nhưng thứ tự sắp xếp commit ngược lại.
-   "git log --oneline" : Mỗi commit chỉ hiển thị một dòng, bao gồm ID commit và dòng đầu tiên của messages (cách này có vẻ dễ nhìn nhất).
-   "git log -p" :Hiển thị chi tiết thông tin commit, bao gồm cả nội dung thay đổi (thêm/xóa dòng code nào), tuy nhiên nếu có nhiều sự thay đổi, cách này nhìn khá là dài và rườm rà.
+      + `git reset --mixed <ID-commit> ` :Gỡ commit trước 'ID-commit' và Undo về trước khi git add.
+      + `git reset --soft <ID-commit> ` :Gỡ commit trước 'ID-commit'.
+      + `git reset --hard <ID-commit> ` :Xóa commit trước 'ID-commit'.
 
-6. "git show + option '35397c3349157245405b09d9a44504b0f7b33be6'" :Show chi tiết thay đổi của 1 commit.
+   + #### git revert
+      + `git revert <ID-commit> ` :Xóa những thay đổi tại 'ID-commit':warning:
 
-7. "git diff" :Xem sự khác biệt của modified với file trước đó.
+6. #### git branch
+   + `git branch` :List các nhánh **(\* là nhánh đang ở)**.
+   + `git branch -D <branch-name> ` :Xóa nhánh **\<branch-name>**.
+   
+   + `git checkout -b <branch-name> ` :Tạo 1 nhánh mới.
+   + `git checkout <branch-name>` :Di chuyển về tới nhánh **\<branch-name>**.
+   
+   + `git merge <branch-name> ` :Kéo các commit từ nhánh 'branch-name' về branch đang ở.
 
-8. "git restore 'filename' " :Quay lại trước khi thay đổi.
-   "git checkout -- 'filename' " :Tương tự.
+7. #### Ignore
+   >#### **.gitignore** là file chứa các file or folder không cần **commit** bằng cách ghi tên vào đó.
 
-9. "git reset HEAD 'filename' " :Undo về trước khi git add.
-   "git restore --staged 'filename' " :Tương tự.
-   "git reset -- mixed 'ID-commit' " :Gỡ commit trước 'ID-commit' và Undo về trước khi git add.
-   "git reset --soft 'ID-commit' " :Gỡ commit trước 'ID-commit'.
-   "git reset --hard 'ID-commit' " :Xóa commit trước 'ID-commit'.
+8. #### Fix error
+   >#### Xử lí ***Conflicting file*** (2 người cùng sửa 1 file trên 2 nhánh khác nhau).
+   + **step 1** :`i`.
+   + **step 2** :Di chuyển tới nhánh cần xử lí (`git checkout` \<branch_Name> ).
+   + **step 3** :Kéo nhánh master(main) về nhánh cần xử lí (`git merge` master(main) ).
+   + **step 4** :Sửa file hiển thị lỗi sau khi merge (file 2 người cùng sửa).
+   + **step 5** :**Add,commit** file rồi **push branch** lên github.
+   + **step 6** :**Đã merge, pull** request bình thường, lỗi ***Conflicting file*** đã được fix.
 
-10. "git revert 'ID-commit' " :Xóa những thay đổi tại 'ID-commit'.
-
-11. "git branch" :list các nhánh (* là nhánh đang ở).
-    "git branch -D 'branch-name' " :Xóa nhánh 'branch-name'.
-
-12. "git checkout -b 'branch-name' " :Tạo 1 nhánh mới.
-    "git checkout 'branch-name '" :Di chuyển về nhánh 'branch-name'.
-
-13. "git merge 'branch-name' " :Kéo các commit từ nhánh 'branch-name' về branch đang ở.
-
-14. file .gitignore chứa các file muốn ẩn bằng cách ghi tên file vào file .gitignore.
-
-15. Xử lí Conflicting file(2 người cùng sửa 1 file trên 2 nhánh khác nhau).
-  step 1 :git pull.
-  step 2 :Di chuyển tới nhánh cần xử lí(git checkout 'branch_Name' ).
-  step 3 :Kéo nhánh master(main) về nhánh cần xử lí(git merge master(main) ).
-  step 4 :Sửa file hiển thị lỗi sau khi merge(file 2 người cùng sửa).
-  step 5 :Add,commit file rồi push branch lên github.
-  step 6 :Đã merge pull request bình thường, lỗi Conflicting file đã được fix.
-
-16.
-   ❯ git config --global credential.helper "cache --timeout=90000"
+9. #### For Linux
+   #### `git config --global credential.helper "cache --timeout=90000"`
+   >#### Duy trì thời gian đăng nhập, sau 90000s phải nhập lại mật khẩu và chạy lại lệnh để tiếp tục duy trì đăng nhập.
 
