@@ -84,10 +84,10 @@
    + `git merge <branch-name> ` :Kéo các commit từ nhánh 'branch-name' về branch đang ở.
 
 7. #### Ignore
-   >#### **.gitignore** là file chứa các file or folder không cần **commit** bằng cách ghi tên vào đó.
+   >**.gitignore** là file chứa các file or folder không cần **commit** bằng cách ghi tên vào file .gitignore.
 
 8. #### Fix error
-   >#### Xử lí ***Conflicting file*** (2 người cùng sửa 1 file trên 2 nhánh khác nhau).
+   >Xử lí ***Conflicting file*** (2 người cùng sửa 1 file trên 2 nhánh khác nhau).
    + **step 1** :`i`.
    + **step 2** :Di chuyển tới nhánh cần xử lí (`git checkout` \<branch_Name> ).
    + **step 3** :Kéo nhánh master(main) về nhánh cần xử lí (`git merge` master(main) ).
@@ -97,5 +97,5 @@
 
 9. #### For Linux
    #### `git config --global credential.helper "cache --timeout=90000"`
-   >#### Duy trì thời gian đăng nhập, sau 90000s phải nhập lại mật khẩu và chạy lại lệnh để tiếp tục duy trì đăng nhập.
+   >Duy trì thời gian đăng nhập, sau 90000s phải nhập lại mật khẩu và chạy lại lệnh để tiếp tục duy trì đăng nhập.
 
