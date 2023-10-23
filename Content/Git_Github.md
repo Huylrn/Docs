@@ -88,7 +88,7 @@
 
 8. #### Fix error
    >Xử lí ***Conflicting file*** (2 người cùng sửa 1 file trên 2 nhánh khác nhau).
-   + **step 1** :`i`.
+   + **step 1** :`git pull`.
    + **step 2** :Di chuyển tới nhánh cần xử lí (`git checkout` \<branch_Name> ).
    + **step 3** :Kéo nhánh master(main) về nhánh cần xử lí (`git merge` master(main) ).
    + **step 4** :Sửa file hiển thị lỗi sau khi merge (file 2 người cùng sửa).
@@ -96,6 +96,6 @@
    + **step 6** :**Đã merge, pull** request bình thường, lỗi ***Conflicting file*** đã được fix.
 
 9. #### For Linux
-   #### `git config --global credential.helper "cache --timeout=90000"`
+   `git config --global credential.helper "cache --timeout=90000"`
    >Duy trì thời gian đăng nhập, sau 90000s phải nhập lại mật khẩu và chạy lại lệnh để tiếp tục duy trì đăng nhập.
 
