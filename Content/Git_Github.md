@@ -59,8 +59,6 @@
 <!-- Head -->
 <summary><b>Menu</b></summary>
 
----
-
 <!-- Body -->
   - <a href="#git-add">**git add**</a>
   - <a href="#git-commit">**git commit**</a>
