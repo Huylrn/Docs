@@ -123,7 +123,7 @@
 
    + <h4 id ="git-revert">git revert</h4>
    
-      + `git revert <ID-commit> ` :Xóa những tất cả những thay đổi tại \<ID-commit>:warning:
+      + `git revert <ID-commit> ` :Xóa tất cả những thay đổi tại \<ID-commit>:warning:
 
 #### 6. **git branch**
    + `git branch` :List các nhánh **(\* là nhánh đang ở)**.
