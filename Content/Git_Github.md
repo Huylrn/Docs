@@ -2,14 +2,13 @@
 **:warning:**`rm -fr .git` :Xóa git khỏi directory **:warning:**
 > :book: `<...>` :Là nơi bạn cần điền vào.
 
----
 <!-- ============================================================ -->
 <details>
 <!-- Head -->
    <summary><b>Menu</b></summary>
 
 <!-- Body -->
----
+
 - - * 
 - [**1. git remote**](#1-git-remote)
 - [**2. git push**](#2-git-push)
@@ -22,6 +21,8 @@
 - [**9. For Linux**](#9-for-linux)
 
 </details>
+
+---
 
 <!-- ============================================================ -->
 
