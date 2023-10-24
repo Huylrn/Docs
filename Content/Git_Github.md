@@ -118,12 +118,12 @@
       ---
 
       + `git reset --mixed <ID-commit> ` :Gỡ commit trước \<ID-commit> và Undo về trước khi git add.
-      + `git reset --soft <ID-commit> ` :Gỡ commit trước \<ID-commit>.
-      + `git reset --hard <ID-commit> ` :Xóa commit trước \<ID-commit>.
+      + `git reset --soft <ID-commit> ` :Gỡ commit trước \<ID-commit>:warning:
+      + `git reset --hard <ID-commit> ` :Xóa commit trước \<ID-commit>:warning:
 
    + <h4 id ="git-revert">git revert</h4>
    
-      + `git revert <ID-commit> ` :Xóa những tất cả những thay đổi tại \<ID-commit> dến **commit** mới nhất:warning:
+      + `git revert <ID-commit> ` :Xóa những tất cả những thay đổi tại \<ID-commit>:warning:
 
 #### 6. **git branch**
    + `git branch` :List các nhánh **(\* là nhánh đang ở)**.
