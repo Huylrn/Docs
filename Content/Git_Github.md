@@ -96,6 +96,7 @@
    + **step 6** :**Đã merge, pull** request bình thường, lỗi ***Conflicting file*** đã được fix.
 
 9. #### For Linux
-   `git config --global credential.helper "cache --timeout=90000"`
+           git config --global credential.helper "cache --timeout=90000"
+    
    >Duy trì thời gian đăng nhập, sau 90000s phải nhập lại mật khẩu và chạy lại lệnh để tiếp tục duy trì đăng nhập.
 
