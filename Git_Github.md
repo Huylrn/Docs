@@ -8,10 +8,7 @@
 <!-- Head -->
    <summary><b>Menu</b></summary>
 
-<!-- Body -->
-
-- - * 
-- [**1. git remote**](#1-git-remote)
+- [1. git remote](#1-git-remote)‘,
 - [**2. git push**](#2-git-push)
 - [**3. git pull**](#3-git-pull)
 - [**4. git clone**](#4-git-clone)
@@ -20,6 +17,7 @@
 - [**7. Ignore**](#7-ignore)
 - [**8. Fix error**](#8-fix-error)
 - [**9. For Linux**](#9-for-linux)
+
 
 </details>
 
@@ -152,3 +150,4 @@
     
    >Duy trì thời gian đăng nhập, sau 90000s phải nhập lại mật khẩu và chạy lại lệnh để tiếp tục duy trì đăng nhập.
 
+[ end ]: end
