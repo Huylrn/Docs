@@ -1,7 +1,7 @@
 # **GIT** / **GITHUB**
 **:warning:**`rm -fr .git` :Xóa git khỏi directory **:warning:**
 ###### [*‘Docs…*](Content/Git_Github)
-> :book: `<...>` :Là nơi bạn cần điền vào.
+> :book: `<...>` :Gợi ý nội dung cần điền vào.
 
 <!-- ============================================================ -->
 <details>
