@@ -9,14 +9,14 @@
    <summary><b>Menu</b></summary>
 
 - [1. git remote](#1-git-remote)‘,
-- [**2. git push**](#2-git-push)
-- [**3. git pull**](#3-git-pull)
-- [**4. git clone**](#4-git-clone)
-- [**5. Basic**](#5-basic)
-- [**6. git branch**](#6-git-branch)
-- [**7. Ignore**](#7-ignore)
-- [**8. Fix error**](#8-fix-error)
-- [**9. For Linux**](#9-for-linux)
+- [2. git push](#2-git-push)
+- [3. git pull](#3-git-pull)
+- [4. git clone](#4-git-clone)
+- [5. Basic](#5-basic)
+- [6. git branch](#6-git-branch)
+- [7. Ignore](#7-ignore)
+- [8. Fix error](#8-fix-error)
+- [9. For Linux](#9-for-linux)
 
 
 </details>
