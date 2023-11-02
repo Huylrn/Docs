@@ -31,13 +31,13 @@
    + `git remote add origin <link repository>` :Liên kết git với github qua link.
    + `git remote add origin new-url <link repository>` :Liên kết thêm với repository khác.
    + `git remote rm origin` :Xóa all liên kết.
-   + `git remote -v` :Hiển thị thông tin liên kết
+   + `git remote -v` :Hiển thị thông tin liên kết.
 
 #### 2. **git push**
    + `git push -u origin <branch name> ` :Lần đầu tiên push.
    >:book: 
    >* *Password* là token,
-   >* **cách truy cập your token**: *open* `Github` *on web* ->`Settings` -> `Developer settings` -> `Personal access tokens` -> `Tokens (classic)` -> `Generate new token` -> `Select scopes` -> :white_check_mark: repo -> `Generate token`.
+   >* **cách truy cập your token**: *open* `Github` *on web* -> `Settings` -> `Developer settings` -> `Personal access tokens` -> `Tokens (classic)` -> `Generate new token` -> `Select scopes` -> :white_check_mark: repo -> `Generate token`.
    
    + `git push` :Đẩy code lên github, dùng khi có 1 nhánh.
    + `git push origin <branch_Name> ` :Dùng khi có nhiều nhánh.
@@ -46,13 +46,11 @@
    + `git pull` :Kéo new commit từ github về, dùng khi có 1 nhánh.
    + `git pull origin <branch_Name> ` :Dùng khi có nhiều nhánh.
 #### 4. **git clone**   
-   + `git clone <link repository> ` :Sao chép repository từ github về.
-   
-   
+   + `git clone <link repository> ` :Sao chép repository từ github về nơi bạn đang ở.
    + `git fetch origin <branch_Name> ` :review branch, khác với pull.
 
 #### 5. **Basic**
-+ `git status` :Xem trạng thái của repository có git.
++ `git status` :Xem trạng thái của repository **(phải có file .git)**.
    
 <!-- ============================================================ -->
 <details>
@@ -75,14 +73,14 @@
    
    + <h4 id="git-add">git add</h4>  
       
-      + `git add` :Add file new vào git.
+      + `git add` :Add new file vào git.
       + `git add .` :Add tất cả.
 
    + <h4 id="git-commit">git commit</h4>
       
       + `git commit` :Dùng sau **git add**, nôm na là đóng gói lại và không có nhãn.
       + `git commit -m <label>` :Commit có nhãn.
-      + `git commit -am <label>` :Commit không cần dùng **git add**, sử dụng đối với các file đã từng **git add** rồi.
+      + `git commit -am <label>` :Commit không cần dùng **git add**, sử dụng đối với các file đã từng **git add** lần đầu.
        
 
    + <h4 id="git-log">git log</h4>
@@ -91,6 +89,7 @@
       + `git log --reverse` :Hiển thị tương tự git log, nhưng thứ tự sắp xếp commit ngược lại.
       + `git log --oneline` : Mỗi commit chỉ hiển thị một dòng, bao gồm ID commit và dòng đầu tiên của messages (cách này có vẻ dễ nhìn nhất).
       + `git log -p` :Hiển thị chi tiết thông tin commit, bao gồm cả nội dung thay đổi (thêm/xóa dòng code nào).
+
 
    + <h4 id="git-show">git show</h4>
    
@@ -102,21 +101,21 @@
 
    + <h4 id="git-diff">git diff</h4>
    
-      + `git diff` :Xem sự khác biệt của modified với file ban đầu.
+      + `git diff` :Xem sự khác biệt của file đã thay đổi *(hiển thị trong git status là modified)* với file ban đầu.
 
    + <h4 id="restore">Undo (restore)</h4>
    
-      + `git restore <filename> ` :Quay lại trước khi thay đổi nội dung trong file.:+1:
+      + `git restore <filename> ` :Quay lại trước khi thay đổi nội dung trong \<filename>.:+1:
       + `git checkout --<filename> ` :Tương tự.:-1:
    
    + <h4 id="reset">Undo (reset)</h4>
    
-      + `git reset HEAD <filename> ` :Undo về trước khi đã dùng **git add**.:+1:
+      + `git reset HEAD <filename> ` :Undo về trước khi đã dùng **git add** với \<filename>.:+1:
       + `git restore --staged <filename> ` :Tương tự.:-1:
       
       ---
 
-      + `git reset --mixed <ID-commit> ` :Gỡ commit trước \<ID-commit> và Undo về trước khi git add.
+      + `git reset --mixed <ID-commit> ` :Gỡ commit trước \<ID-commit> và Undo về trước khi **git add**.
       + `git reset --soft <ID-commit> ` :Gỡ commit trước \<ID-commit>:warning:
       + `git reset --hard <ID-commit> ` :Xóa commit trước \<ID-commit>:warning:
 
@@ -129,9 +128,9 @@
    + `git branch -D <branch-name> ` :Xóa nhánh **\<branch-name>**.
    
    + `git checkout -b <branch-name> ` :Tạo 1 nhánh mới.
-   + `git checkout <branch-name>` :Di chuyển về tới nhánh **\<branch-name>**.
+   + `git checkout <branch-name>` :Di chuyển về nhánh **\<branch-name>**.
    
-   + `git merge <branch-name> ` :Kéo các commit từ nhánh \<branch-name> về branch đang ở.
+   + `git merge <branch-name> ` :Kéo các commit từ branch \<branch-name> về branch đang ở.
 
 #### 7. **Ignore**
    >**.gitignore** là file chứa các file or folder không cần **commit** bằng cách ghi tên vào file **.gitignore**.
