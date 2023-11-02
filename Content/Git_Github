@@ -8,7 +8,7 @@
 
 2. "git push -u origin 'branch name' " :push lần đầu.
    note: password là token,
-         cách truy cập your token: Settings -> Developer settings -> Personal access tokens -> Tokens (classic) -> Generate new token -> Select scopes -> ✅ repo -> Generate token.
+         cách truy cập your token: open Github on web -> Settings -> Developer settings -> Personal access tokens -> Tokens (classic) -> Generate new token -> Select scopes -> ✅ repo -> Generate token.
 
 
 3. "git push" :Đẩy code lên github, dùng khi có 1 nhánh.

@@ -36,8 +36,8 @@
 #### 2. **git push**
    + `git push -u origin <branch name> ` :Lần đầu tiên push.
    >:book: 
-   >* *Passwork* là token,
-   >* **cách truy cập your token**: `Settings` -> `Developer settings` -> `Personal access tokens` -> `Tokens (classic)` -> `Generate new token` -> `Select scopes` -> :white_check_mark: repo -> `Generate token`.
+   >* *Password* là token,
+   >* **cách truy cập your token**: *open* `Github` *on web* ->`Settings` -> `Developer settings` -> `Personal access tokens` -> `Tokens (classic)` -> `Generate new token` -> `Select scopes` -> :white_check_mark: repo -> `Generate token`.
    
    + `git push` :Đẩy code lên github, dùng khi có 1 nhánh.
    + `git push origin <branch_Name> ` :Dùng khi có nhiều nhánh.
