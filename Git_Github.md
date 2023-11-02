@@ -50,7 +50,7 @@
    + `git fetch origin <branch_Name> ` :review branch, khác với pull.
 
 #### 5. **Basic**
-+ `git status` :Xem trạng thái của repository **(phải có file .git)**.
++ `git status` :Xem trạng thái của repository **(có folder .git)**.
    
 <!-- ============================================================ -->
 <details>
@@ -101,7 +101,7 @@
 
    + <h4 id="git-diff">git diff</h4>
    
-      + `git diff` :Xem sự khác biệt của file đã thay đổi *(hiển thị trong git status là modified)* với file ban đầu.
+      + `git diff` :Xem sự khác nhau giữa file đã thay đổi *(hiển thị trong git status là modified)* với file ban đầu.
 
    + <h4 id="restore">Undo (restore)</h4>
    
