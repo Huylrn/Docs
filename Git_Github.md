@@ -1,5 +1,6 @@
 # **GIT** / **GITHUB**
 **:warning:**`rm -fr .git` :Xóa git khỏi directory **:warning:**
+###### [*‘Docs…*](Content/Git_Github)
 > :book: `<...>` :Là nơi bạn cần điền vào.
 
 <!-- ============================================================ -->
@@ -32,12 +33,13 @@
    + `git remote add origin <link repository>` :Liên kết git với github qua link.
    + `git remote add origin new-url <link repository>` :Liên kết thêm với repository khác.
    + `git remote rm origin` :Xóa all liên kết.
+   + `git remote -v` :Hiển thị thông tin liên kết
 
 #### 2. **git push**
    + `git push -u origin <branch name> ` :Lần đầu tiên push.
    >:book: 
    >* *Passwork* là token,
-   >* **cách truy cập your token**: `Settings` -> `Developer settings` -> `Personal access tokens` -> `Generate new token`.
+   >* **cách truy cập your token**: `Settings` -> `Developer settings` -> `Personal access tokens` -> `Tokens (classic)` -> `Generate new token` -> `Select scopes` -> :white_check_mark: repo -> `Generate token`.
    
    + `git push` :Đẩy code lên github, dùng khi có 1 nhánh.
    + `git push origin <branch_Name> ` :Dùng khi có nhiều nhánh.
