@@ -26,7 +26,7 @@
  - **Only** the first time.  
    ```sh
    git config --global user.name "HuyNguyen"
-	git config --global user.email huuynguyendd@gmail.com
+   git config --global user.email huuynguyendd@gmail.com
    ```
 
 ---
