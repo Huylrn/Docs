@@ -1,6 +1,5 @@
 # **GIT** / **GITHUB**
 **:warning:**`rm -fr .git` :Xóa git khỏi directory **:warning:**
-###### [*‘Docs…*](Content/Git_Github)
 > :book: `<...>` :Gợi ý nội dung cần điền vào.
 
 <!-- ============================================================ -->
@@ -22,11 +21,21 @@
 </details>
 
 ---
+###### [*‘Base…*](Content/Git_Github)
+
+ - **Only** the first time.  
+   ```sh
+   git config --global user.name "HuyNguyen"
+	git config --global user.email huuynguyendd@gmail.com
+   ```
+
+---
 
 <!-- ============================================================ -->
 
 ## Start new project
-   **:exclamation:**`git init` :Bắt đầu project.
+**:exclamation:**`git init` :Bắt đầu project.
+
 #### 1. **git remote**
    + `git remote add origin <link repository>` :Liên kết git với github qua link.
    + `git remote add origin new-url <link repository>` :Liên kết thêm với repository khác.
@@ -136,7 +145,8 @@
    >**.gitignore** là file chứa các file or folder không cần **commit** bằng cách ghi tên vào file **.gitignore**.
 
 #### 8. **Fix error**
-   >Xử lí ***Conflicting file*** (2 người cùng sửa 1 file trên 2 nhánh khác nhau).
+- ##### Xử lí ***Conflicting file*** (2 người cùng sửa 1 file trên 2 nhánh khác nhau).
+   
    + **step 1** :`git pull`.
    + **step 2** :Di chuyển tới nhánh cần xử lí (`git checkout` \<branch_Name> ).
    + **step 3** :Kéo nhánh master(main) về nhánh cần xử lí (`git merge` master(main) ).
@@ -144,9 +154,16 @@
    + **step 5** :**Add,commit** file rồi **push branch** lên github.
    + **step 6** :**Đã merge, pull** request bình thường, lỗi ***Conflicting file*** đã được fix.
 
-#### 9. **For Linux**
-         git config --global credential.helper "cache --timeout=90000"
-    
-   >Duy trì thời gian đăng nhập, sau 90000s phải nhập lại mật khẩu và chạy lại lệnh để tiếp tục duy trì đăng nhập.
+---
 
+- ##### **error**: failed to push some refs to ...
+   ```sh
+   git pull --rebase origin master
+   ```
+
+#### 9. **For Linux**
+- ##### Duy trì thời gian đăng nhập, sau 90000s phải nhập lại mật khẩu và chạy lại lệnh để tiếp tục duy trì đăng nhập.
+   ```sh
+   git config --global credential.helper "cache --timeout=90000"
+   ``` 
 [ end ]: end
