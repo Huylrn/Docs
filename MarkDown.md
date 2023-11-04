@@ -35,8 +35,7 @@
     "Heading level 1.
     ="
     ```
-    
----
+
     ```md
     "## Heading level 2."
     or
@@ -75,10 +74,6 @@
     ***italic and bold text***
     ```
 
----
-
-- `more`
-
     ```md
     ___italic and bold text___
     
@@ -103,15 +98,15 @@
     ```md
     ~~Noa"-"~~
     ```
-> ~~Noa"-"~~
+    > ~~Noa"-"~~
 
 
 ## 5. Blockquote - Khối trích dẫn
 ```md
 > Followed me.
 ```
-- The Rendered output looks like this:
-  > Followed me.
+The Rendered output looks like this:
+> Followed me.
 
 
 - #### 5.1 Blockquote with multiple paragraphs
@@ -267,12 +262,19 @@ ___
 
 ## 10. Images
 
-😄`Command + V` from image.
+- 😄`Command + V` from image.
 
-`<img width="230" alt="image" src="https://github.com/Huylrn/Docs/assets/141661219/bee8aef2-1022-4630-9483-f7be7890b032">`
+    `<img width="230" alt="image" src="https://github.com/Huylrn/Docs/assets/141661219/bee8aef2-1022-4630-9483-f7be7890b032">`
 
+    <img width="230" alt="image" src="https://github.com/Huylrn/Docs/assets/141661219/bee8aef2-1022-4630-9483-f7be7890b032">
 
-<img width="230" alt="image" src="https://github.com/Huylrn/Docs/assets/141661219/bee8aef2-1022-4630-9483-f7be7890b032">
+- default
+    ```md
+    ![Not found](https://github.com/Huylrn/Docs/assets/141661219/bee8aef2-1022-4630-9483-f7be7890b032)
+    ```
+
+    ![Not found](https://github.com/Huylrn/Docs/assets/141661219/bee8aef2-1022-4630-9483-f7be7890b032)
+
 
 ## 11. Table - Bảng
 
@@ -347,5 +349,3 @@ You can add an image or a code block, too.
 \* Helle,World!\*
 ```
 \* Hello,World!\*
-
-$$ Author:Huylrn $$
